@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Finger+Paint&family=Marcellus+SC&family=Roboto:wght@300;400;700;900&family=Rubik+Dirt&family=Satisfy&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*::-moz-selection {
+  background-color: #000000;
+  color: #ff6347;
+}
+
+*::selection {
+  background-color: #000000;
+  color: #ff6347;
+}
+
+.body__home {
+  background-color: #242323;
+}
+
+.body__home .section__box {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  overflow: hidden;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "box2 box1 box1 box3" "box4 box1 box1 box5";
+}
+
+.body__home .section__box .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.body__home .section__box .box1 {
+  grid-area: box1;
+  background-image: url(../images/background1.jpg);
+  flex-direction: column;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-direction: normal;
+  animation-direction: normal;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+.body__home .section__box .box1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #524949;
+}
+
+.body__home .section__box .box1 h1 {
+  color: #ffffff;
+  font-size: 70px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Rubik Dirt", cursive;
+  z-index: 1;
+  text-shadow: 1px 1px 1px #ffffff;
+  -webkit-animation: appear;
+  animation: appear;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-direction: normal;
+  animation-direction: normal;
+  -webkit-animation-iteration-count: initial;
+  animation-iteration-count: initial;
+}
+
+.body__home .section__box .box1 h1 span {
+  color: #ff6347;
+}
+
+.body__home .section__box .box1 h2 {
+  color: #ff6347;
+  font-size: 50px;
+  font-family: "Satisfy", cursive;
+  z-index: 1;
+  text-shadow: 1px 1px 1px rgb(0, 0, 0);
+  -webkit-animation: appear;
+  animation: appear;
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+  -webkit-animation-direction: normal;
+  animation-direction: normal;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+.body__home .section__box .side__box {
+  z-index: 1;
+  font-family: "Satisfy", cursive;
+  font-size: 7vh;
+  -webkit-animation: scale-up-ver-top 0.3s cubic-bezier(0.8, 0.8, 0.8, 1) both;
+  animation: scale-up-ver-top 0.3s cubic-bezier(0.8, 0.8, 0.8, 1) both;
+}
+
+.body__home .section__box .side__box:hover {
+  background-color: #000000;
+  transition: 0.5s;
+}
+
+.body__home .section__box .side__box a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 3px rgba(61, 57, 57, 0.74);
+  text-align: center;
+}
+
+.body__home .section__box .box:nth-child(2) {
+  grid-area: box 2;
+}
+
+.body__home .section__box .box:nth-child(3) {
+  grid-area: box 3;
+}
+
+.body__home .section__box .box:nth-child(4) {
+  grid-area: box 4;
+}
+
+.body__home .section__box .box:nth-child(5) {
+  grid-area: box 5;
+}
+
+.body__home .section__box .box:nth-child(3) {
+  -webkit-animation-delay: 0.45s;
+  animation-delay: 0.45s;
+}
+
+.body__home .section__box .box:nth-child(4) {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+.body__home .section__box .box:nth-child(5) {
+  -webkit-animation-delay: 0.75s;
+  animation-delay: 0.75s;
+}
+
+.body__home .section__box .box2,
+.body__home .section__box .box5 {
+  background-color: #ff6347;
+}
+
+.body__home .section__box .box3,
+.body__home .section__box .box4 {
+  background-color: #524949;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes appear {
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes scale-up-ver-top {
+  0% {
+    transform: scaleY(0);
+    transform-origin: 100% 0%;
+  }
+
+  100% {
+    transform: scaleY(1);
+    transform-origin: 100% 0%;
+  }
+}
+
+@-webkit-keyframes scale-up-ver-top {
+  0% {
+    transform: scaleY(0);
+    transform-origin: 100% 0%;
+  }
+
+  100% {
+    transform: scaleY(1);
+    transform-origin: 100% 0%;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */

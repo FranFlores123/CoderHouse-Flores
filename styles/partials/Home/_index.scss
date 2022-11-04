@@ -1,0 +1,170 @@
+.body__home {
+    background-color: #242323;
+
+    .section__box {
+        width: 100%;
+        height: 100vh;
+        display: grid;
+        overflow: hidden;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+                "box2 box1 box1 box3"
+                "box4 box1 box1 box5";
+        
+                .box {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .box1 {
+                    grid-area: box1;
+                    background-image: url(../images/background1.jpg);
+                    flex-direction: column;
+                    background-size: cover;
+                    background-position: center;
+                    text-align: center;
+                    width: 100%;
+                    height: 100%;
+                    -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+                    animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+                    animation-duration: 0.5s;
+                    animation-timing-function: ease-in-out;
+                    animation-direction:normal;
+                    animation-iteration-count: 1;
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        background-color: $bgColor;
+                    }
+
+                    h1 {
+                        color: #ffffff;
+                        font-size: 70px;
+                        font-weight: 600;
+                        text-transform: uppercase;
+                        font-family: $fontRubik;
+                        z-index: 1;
+                        text-shadow: 1px 1px 1px #ffffff;
+                        -webkit-animation: appear;
+                        animation: appear;
+                        animation-duration: 1.5s;
+                        animation-direction:normal;
+                        animation-iteration-count: initial;
+
+                        span {
+                            color:$mainColor;
+                        }
+                    }
+                    h2 {
+                        color:$mainColor;
+                        font-size: 50px;
+                        font-family: $fontSatisfy;
+                        z-index: 1;
+                        text-shadow: 1px 1px 1px rgb(0, 0, 0);
+                        -webkit-animation: appear;
+                        animation: appear;
+                        animation-duration: 4s;
+                        animation-direction:normal;
+                        animation-iteration-count: 1;
+                    }
+                }
+
+                .side__box {
+                    z-index: 1;
+                    font-family: $fontSatisfy;
+                    font-size: 7vh;
+                    -webkit-animation: scale-up-ver-top 0.3s cubic-bezier(0.8, 0.8, 0.8, 1.000) both;
+                    animation: scale-up-ver-top 0.3s cubic-bezier(0.8, 0.8, 0.8, 1.000) both;
+
+                    &:hover {
+                        background-color: #000000;
+                        transition: 0.5s;
+                    }
+
+                    a {
+                        text-decoration: none;
+                        color: rgb(255, 255, 255);
+                        text-shadow: 2px 2px 3px rgba(61, 57, 57, 0.74);
+                        text-align: center;
+                    }
+                }
+
+                @for $box from 2 through 5 {
+                    .box:nth-child(#{$box}) {
+                        grid-area: box$box;
+                    }
+                }
+
+                @for $animD from 3 through 5 {
+                    .box:nth-child(#{$animD}) {
+                        animation-delay: $animD*0.15s;
+                    }
+                }
+
+                .box2, .box5 {
+                    background-color: $mainColor;
+                }
+                
+                .box3, .box4 {
+                    background-color: $bgColor;
+                }
+    }
+}
+
+@keyframes appear {
+    0%{
+        opacity:0;
+    }
+    25%{
+        opacity:0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@-webkit-keyframes appear {
+    0%{
+        opacity:0;
+    }
+    25%{
+        opacity:0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes scale-up-ver-top {
+    0% {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+    -webkit-transform-origin: 100% 0%;
+            transform-origin: 100% 0%;
+    }
+    100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    -webkit-transform-origin: 100% 0%;
+            transform-origin: 100% 0%;
+    }
+} 
+@-webkit-keyframes scale-up-ver-top {
+    0% {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+    -webkit-transform-origin: 100% 0%;
+            transform-origin: 100% 0%;
+    }
+    100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    -webkit-transform-origin: 100% 0%;
+            transform-origin: 100% 0%;
+    }
+}
