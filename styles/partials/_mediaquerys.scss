@@ -1,0 +1,109 @@
+@media screen and (min-width: 900px) {
+    .box a:hover {
+        color: #ff6347;
+        font-size: 8vh;
+        transition: all 0.3s;
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+    /* MENU ICONO */
+
+    .btn__label {
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        background-color: rgb(88, 76, 76);
+        width: 100vw;
+        margin-left: -100%;
+        transition: all 0.5s;
+        z-index: 2;
+
+        .menu {
+            flex-direction: column;
+
+            .menu__item {
+                width: 100%;
+                height: 15vh;
+                border-top: 1px solid #ffffff;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+
+    #btn__menu:checked~.navbar {
+        margin-left: 0;
+    }
+}
+
+// MEDIA QUERYS HOME //
+
+@media screen and (max-width: 768px) {
+    .section__box {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+            "box1 box1"
+            "box2 box3"
+            "box4 box5";
+
+        .box2,
+        .box3,
+        .box4,
+        .box5 {
+            font-size: 6vh;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .section__box {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-areas:
+            "box1"
+            "box2"
+            "box3"
+            "box4"
+            "box5";
+
+        &>* {
+            flex: 1;
+        }
+
+        .box1 {
+            flex: 2;
+
+            h1 {
+                font-size: 10vw;
+            }
+
+            h2 {
+                font-size: 7vw;
+            }
+        }
+
+        .box4 {
+            order: 1;
+        }
+
+        .box2 a,
+        .box3 a,
+        .box4 a,
+        .box5 a {
+            font-size: 5.5vh;
+        }
+    }
+}
+
+
+//FIN MEDIA QUERYS HOME //

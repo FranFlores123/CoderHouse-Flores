@@ -1,0 +1,218 @@
+.body__menu {
+    background-image: url(../images/background__white.jpg);
+}
+
+.background__pizza {
+    background-image: url(../images/background1.jpg);
+    background-size: cover;
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(68, 68, 68, 0.562);
+    }
+
+    .background__title {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        -webkit-animation: appear;
+        animation: appear;
+        animation-duration: 1s;
+        animation-direction: normal;
+        animation-iteration-count: 1;
+
+        h2 {
+            color: rgb(255, 255, 255);
+            text-transform: uppercase;
+            font-size: 15vh;
+            font-family: $fontRubik;
+            font-weight: 600;
+            z-index: 1;
+            position: absolute;
+            text-shadow: 3px 3px 4px #0000008f;
+
+            span {
+                color: $mainColor;
+            }
+        }
+    }
+}
+
+%section {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    gap: 3vh;
+}
+
+%sectcard {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45vh;
+    width: 30vw;
+    box-shadow: 4px 4px 10spx rgba(0, 0, 0, 0.459);
+    border-radius: 20px;
+    background-color: #6b391ca4;
+}
+
+%sectdescription {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    max-width: 13vw;
+    max-height: 42vh;
+}
+
+%secth2 {
+    font-size: 2vw;
+    font-family: $fontRubik;
+    color: #ffffff;
+    font-weight: 400;
+    padding-bottom: 8%;
+}
+
+%sectp {
+    font-size: 2.5vh;
+    font-family: $fontMarcellus;
+    color: #ffffff;
+    font-weight: 300;
+    padding-inline: 8%;
+    padding-bottom: 2vh;
+}
+
+%secta {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1.2vw;
+    background-color: $mainColor;
+    padding: 5%;
+    font-weight: 300;
+    border-radius: 15px;
+    text-transform: uppercase;
+    font-family: $fontRubik;
+}
+
+.section__card {
+    @extend %section;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas:
+        "card1  card2  card3"
+        "card4  card5  card6"
+        "card7  card8  card9"
+        "card10 card11 card12"
+        "card13 card14 card15"
+        "card16 card17 card18";
+
+        .card {
+            @extend %sectcard;
+
+            .pizzaimg {
+                max-width: 13vw;
+            }
+
+            .description {
+                @extend %sectdescription;
+
+                h2 {
+                    @extend %secth2;
+                }
+
+                p {
+                    @extend %sectp;
+                }
+
+                a {
+                    @extend %secta;
+                }
+            }
+            
+        }
+}
+
+.section__card__veggie {
+    @extend %section; 
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "card19  card20  card21"
+        "card22  card23  card24";
+
+        .card {
+            @extend %sectcard;
+
+            .pizzaimg {
+                max-width: 13vw;
+            }
+
+            .description {
+                @extend %sectdescription;
+
+                h2 {
+                    @extend %secth2;
+                }
+
+                p {
+                    @extend %sectp;
+                }
+
+                a {
+                    @extend %secta;
+                }
+            }
+            
+        }
+}
+
+@for $card from 1 through 18 {
+    .section__card:nth-child(#{$card}) {
+        grid-area: card$card;
+    }
+}
+
+@for $cardV from 1 through 6 {
+    .section__card__evggie:nth-child(#{$cardV}) {
+        grid-area: cardV$cardV;
+    }
+}
+
+.veggie__title {
+    width: 100%;
+    height: 15vh;
+    margin-block: 3rem;
+    background-color: $bgColor;
+    color: #ffffff;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-family: $fontRubik;
+
+    h2 {
+        font-size: 8vh;
+
+        span {
+            color: $mainColor;
+        }
+    }
+}

@@ -1,0 +1,41 @@
+
+.imgiconomenu {
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+}
+
+.btn__label {
+    display: none;
+    width: 4rem;
+    height: 4rem;
+    border-right: 1px solid #ffffff;
+}
+
+header {
+    width: 100%;
+    background-color: #494040;
+    height: 4rem;
+
+    #btn__menu {
+        display: none;
+    }
+
+    .navbar {
+        .menu {
+            display: flex;
+            list-style: none;
+            align-items: center;
+            justify-content: space-evenly;
+
+            .menu__item>a {
+                text-decoration: none;
+                color: rgb(255, 255, 255);
+                font-family: 'Satisfy', cursive;
+                display: block;
+                font-size: 1.8rem;
+                padding: 15px 20px;
+            }
+        }
+    }
+}
