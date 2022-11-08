@@ -121,7 +121,7 @@
         .background__title {
 
             h2 {
-                font-size: 7vh;
+                font-size: 5.5vh;
             }
         }
     }
@@ -180,6 +180,7 @@
     /// MEDIA QUERYS CUCINA 480 ///
     .cucina__cards {
         padding-block: 4rem;
+        height: auto;
 
         .cucina__card {
             width: 85%;
@@ -203,19 +204,19 @@
     /// MEDIA QUERYS NUESTRO METODO 480 ///
 
     .back1 {
-        height: 120vh;
+        height: 90vh;
 
         .frase__inicial {
             font-size: 1.2rem;
             line-height: 2rem;
             padding-inline: 5%;
-            padding-top: 20%;
+            padding-top: 25vh;
         }
     }
 
     main {
         .back2 {
-            padding-top: 15vh;
+            padding-top: 20vh;
 
             h2 {
                 text-align: center;
@@ -243,7 +244,7 @@
 
         .back4,
         .back5 {
-            padding-top: 10vh;
+            padding-top: 20vh;
             padding-left: 10vw;
         }
 

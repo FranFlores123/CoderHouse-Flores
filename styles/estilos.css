@@ -650,6 +650,7 @@ footer .footer__title {
   border-bottom: 1px #ffffff solid;
   width: 50%;
   height: 5rem;
+  padding-top: 1rem;
 }
 footer .footer__title h2 {
   color: #ffffff;
@@ -860,7 +861,7 @@ footer .redes a {
     height: 30vh;
   }
   .background__pizza .background__title h2 {
-    font-size: 7vh;
+    font-size: 5.5vh;
   }
   .section__card,
 .section__card__veggie {
@@ -910,6 +911,7 @@ footer .redes a {
   }
   .cucina__cards {
     padding-block: 4rem;
+    height: auto;
   }
   .cucina__cards .cucina__card {
     width: 85%;
@@ -926,16 +928,16 @@ footer .redes a {
     bottom: 2vh;
   }
   .back1 {
-    height: 120vh;
+    height: 90vh;
   }
   .back1 .frase__inicial {
     font-size: 1.2rem;
     line-height: 2rem;
     padding-inline: 5%;
-    padding-top: 20%;
+    padding-top: 25vh;
   }
   main .back2 {
-    padding-top: 15vh;
+    padding-top: 20vh;
   }
   main .back2 h2 {
     text-align: center;
@@ -956,7 +958,7 @@ main .back3 p {
   }
   main .back4,
 main .back5 {
-    padding-top: 10vh;
+    padding-top: 20vh;
     padding-left: 10vw;
   }
   main .back4 > p {
