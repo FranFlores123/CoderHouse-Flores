@@ -155,8 +155,8 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas:
-        "card19  card20  card21"
-        "card22  card23  card24";
+        "cardV1  cardV2  cardV3"
+        "cardV4  cardV5  cardV6";
 
         .card {
             @extend %sectcard;

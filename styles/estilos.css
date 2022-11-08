@@ -262,7 +262,7 @@
 .section__card__veggie {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  grid-template-areas: "card19  card20  card21" "card22  card23  card24";
+  grid-template-areas: "cardV1  cardV2  cardV3" "cardV4  cardV5  cardV6";
 }
 .section__card__veggie .card .pizzaimg {
   max-width: 13vw;
@@ -382,6 +382,209 @@
   color: #ff6347;
 }
 
+.cucina__cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  width: 100%;
+  height: 85vh;
+  background-image: url(../images/background__white.jpg);
+}
+.cucina__cards .cucina__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
+  height: 70vh;
+  background-color: #524949;
+  box-shadow: 3px 3px 15px black;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  -webkit-animation: swing-in-top-fwd 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+  animation: swing-in-top-fwd 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+}
+.cucina__cards .cucina__card.anim__delay1 {
+  -webkit-animation-duration: 1.4s;
+  animation-duration: 1.4s;
+}
+.cucina__cards .cucina__card.anim__delay2 {
+  -webkit-animation-duration: 1.8s;
+  animation-duration: 1.8s;
+}
+.cucina__cards .cucina__card img {
+  width: 100%;
+  padding-bottom: 2rem;
+}
+.cucina__cards .cucina__card .infocard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.cucina__cards .cucina__card .infocard h3 {
+  font-family: "Rubik Dirt", cursive;
+  color: #ff6347;
+  text-transform: uppercase;
+  padding-bottom: 1rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-align: center;
+  padding-inline: 1rem;
+}
+.cucina__cards .cucina__card .infocard p {
+  padding-bottom: 2rem;
+  font-size: 1.5rem;
+  color: #ffffff;
+  padding-inline: 2.5rem;
+  text-align: center;
+  font-family: "Marcellus SC", serif;
+}
+.cucina__cards .cucina__card .infocard a {
+  font-family: "Rubik Dirt", cursive;
+  color: #ffffff;
+  font-size: 1.5rem;
+  text-decoration: none;
+  background-color: #ff6347;
+  padding: 1rem;
+  border-radius: 10px;
+  font-weight: 400;
+}
+
+.pres__grey::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 120vh;
+  background-color: rgba(34, 32, 32, 0.562);
+}
+
+main .back5, main .back4, main .back3, main .back2, .back1 {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 120vh;
+}
+
+main .back5 p, main .back4 p, main .back3 p {
+  text-align: right;
+  font-size: 2.5rem;
+  padding-right: 10vw;
+  color: #ffffff;
+  text-shadow: 1px 1px 2px #ff6347;
+  font-family: "Marcellus SC", serif;
+}
+
+.back__h {
+  height: 120vh;
+}
+
+.back1 {
+  background-image: url(../images/back1.jpg);
+}
+.back1 .frase__inicial {
+  text-align: center;
+  padding-inline: 25vw;
+  padding-top: 20vh;
+  font-family: "Marcellus SC", serif;
+  color: white;
+  font-weight: 300;
+  letter-spacing: 5px;
+  font-size: 1.5rem;
+  position: relative;
+  text-transform: uppercase;
+  line-height: 4rem;
+  -webkit-animation: appear;
+  animation: appear;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+.back1 .frase__inicial span {
+  color: #ff6347;
+  text-shadow: 1px 1px 4px #000000;
+}
+
+main .back2 {
+  background-image: url(../images/back2.jpg);
+  display: flex;
+  color: #ffffff;
+  flex-direction: column;
+  padding-top: 25vh;
+  padding-inline: 10vw;
+  font-family: "Marcellus SC", serif;
+  width: 100%;
+}
+main .back2 h2 {
+  color: #ff6347;
+  z-index: 1;
+  font-size: 2rem;
+  padding-bottom: 2.5rem;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 3px #2c2929;
+}
+main .back2 p {
+  z-index: 1;
+  font-size: 2rem;
+  padding-bottom: 4rem;
+  text-shadow: 1px 1px 3px #2c2929;
+}
+main .back2 .pres__lista {
+  z-index: 1;
+  display: flex;
+  height: 20vh;
+  align-items: center;
+  text-shadow: 1px 1px 3px #2c2929;
+}
+main .back2 .pres__lista ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding-left: 5rem;
+  height: 100%;
+  justify-content: space-between;
+  font-size: 1.5rem;
+}
+main .back2 .pres__lista ul li i {
+  color: #ff6347;
+  z-index: 1;
+}
+main .back3 {
+  background-image: url(../images/back3.jpg);
+  display: flex;
+  padding-top: 25vh;
+  flex-direction: column;
+}
+main .back3 h2 {
+  text-align: left;
+  width: 100%;
+  padding-left: 10vw;
+  font-size: 3rem;
+  padding-bottom: 4rem;
+  color: #ff6347;
+  z-index: 1;
+  text-shadow: 1px 1px 3px #2c2929;
+}
+main .back4 {
+  background-image: url(../images/back4.jpg);
+  display: flex;
+  padding-top: 25vh;
+  flex-direction: column;
+}
+main .back4 p {
+  text-align: left;
+  line-height: 10rem;
+  padding-inline: 10vw;
+}
+main .back5 {
+  background-image: url(../images/back5.jpg);
+  padding-top: 25vh;
+  padding-left: 35vw;
+}
 .imgiconomenu {
   width: 4rem;
   height: 4rem;
@@ -395,10 +598,15 @@
   border-right: 1px solid #ffffff;
 }
 
+.header__NM {
+  background-color: #2c2929;
+  height: 5rem;
+}
+
 header {
   width: 100%;
-  background-color: #494040;
-  height: 4rem;
+  background-color: #524949;
+  height: 5rem;
 }
 header #btn__menu {
   display: none;
@@ -409,13 +617,18 @@ header .navbar .menu {
   align-items: center;
   justify-content: space-evenly;
 }
-header .navbar .menu .menu__item > a {
-  text-decoration: none;
+header .navbar .menu .menu__item {
+  display: flex;
+  padding: 15px 20px;
+}
+header .navbar .menu .menu__item a {
   color: rgb(255, 255, 255);
   font-family: "Satisfy", cursive;
-  display: block;
-  font-size: 1.8rem;
-  padding: 15px 20px;
+  font-size: 2.2rem;
+  text-decoration: none;
+}
+header .navbar .menu .active a {
+  color: #ff6347;
 }
 
 footer {
@@ -566,22 +779,21 @@ footer .redes a {
     opacity: 1;
   }
 }
-@media screen and (min-width: 900px) {
-  .box a:hover {
-    color: #ff6347;
-    font-size: 8vh;
-    transition: all 0.3s;
-  }
-}
 @media screen and (max-width: 900px) {
   /* MENU ICONO */
   .btn__label {
     display: block;
   }
+  header {
+    height: 4rem;
+  }
+  .header__NM {
+    height: 4rem;
+  }
   .navbar {
     position: absolute;
     background-color: rgb(88, 76, 76);
-    width: 100vw;
+    width: 100%;
     margin-left: -100%;
     transition: all 0.5s;
     z-index: 2;
@@ -593,9 +805,8 @@ footer .redes a {
     width: 100%;
     height: 15vh;
     border-top: 1px solid #ffffff;
-    text-align: center;
-    display: flex;
     align-items: center;
+    text-align: center;
     justify-content: center;
   }
   #btn__menu:checked ~ .navbar {
@@ -644,5 +855,152 @@ footer .redes a {
 .section__box .box4 a,
 .section__box .box5 a {
     font-size: 5.5vh;
+  }
+  .background__pizza {
+    height: 30vh;
+  }
+  .background__pizza .background__title h2 {
+    font-size: 7vh;
+  }
+  .section__card,
+.section__card__veggie {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+  .section__card .card,
+.section__card__veggie .card {
+    flex-direction: column;
+    width: 85vw;
+    height: 70vh;
+    padding-bottom: 1rem;
+  }
+  .section__card .card .pizzaimg,
+.section__card__veggie .card .pizzaimg {
+    max-width: 85%;
+  }
+  .section__card .card .description,
+.section__card__veggie .card .description {
+    max-width: 80%;
+  }
+  .section__card .card .description h2,
+.section__card__veggie .card .description h2 {
+    font-size: 1.8rem;
+    padding-bottom: 1rem;
+  }
+  .section__card .card .description p,
+.section__card__veggie .card .description p {
+    font-size: 1.2rem;
+  }
+  .section__card .card .description a,
+.section__card__veggie .card .description a {
+    padding: 1rem;
+    font-size: 1.4rem;
+  }
+  .veggie__title {
+    text-align: center;
+  }
+  .veggie__title h2 {
+    font-size: 6vh;
+  }
+  .cucina__cards {
+    flex-direction: column;
+    height: 100%;
+    padding-block: 5vh;
+  }
+  .cucina__cards {
+    padding-block: 4rem;
+  }
+  .cucina__cards .cucina__card {
+    width: 85%;
+    height: 65vh;
+    margin-bottom: 4vh;
+  }
+  .cucina__cards .cucina__card h3 {
+    font-size: 2rem;
+  }
+  .cucina__cards .cucina__card p {
+    padding-top: 1rem;
+  }
+  .cucina__cards .cucina__card a {
+    bottom: 2vh;
+  }
+  .back1 {
+    height: 120vh;
+  }
+  .back1 .frase__inicial {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    padding-inline: 5%;
+    padding-top: 20%;
+  }
+  main .back2 {
+    padding-top: 15vh;
+  }
+  main .back2 h2 {
+    text-align: center;
+    padding-top: 10%;
+  }
+  main .back2 p {
+    text-align: center;
+  }
+  main .back2 .pres__lista ul {
+    padding-left: 0rem;
+    line-height: 1rem;
+    width: 45vw;
+    font-size: 1.2rem;
+  }
+  main .back3 h2,
+main .back3 p {
+    padding-inline: 10vw;
+  }
+  main .back4,
+main .back5 {
+    padding-top: 10vh;
+    padding-left: 10vw;
+  }
+  main .back4 > p {
+    font-size: 2rem;
+    padding-inline: 5vw;
+    line-height: 4rem;
+  }
+  main .back5 p {
+    text-align: center;
+  }
+  footer .navbar__footer {
+    padding-bottom: 0rem;
+  }
+  footer .navbar__footer .menu__footer {
+    flex-direction: column;
+    padding-block: 1rem;
+  }
+  footer .navbar__footer .menu__footer .menu__item__f a {
+    font-size: 1.4rem;
+    padding: 0rem;
+    padding-bottom: 2rem;
+  }
+}
+@media screen and (min-width: 900px) {
+  .box a:hover {
+    color: #ff6347;
+    font-size: 8vh;
+    transition: all 0.3s;
+  }
+  .navbar .menu .menu__item a:hover {
+    color: #ff6347;
+  }
+  .section__card .card .description a:hover,
+.section__card__veggie .card .description a:hover {
+    background-color: #836f6f;
+    cursor: pointer;
+  }
+  .contacto__formulario form .botones .submit:hover,
+.contacto__formulario form .botones .reset:hover {
+    background-color: #836f6f;
+    cursor: pointer;
+  }
+  .cucina__cards .cucina__card .infocard a:hover {
+    background-color: #836f6f;
+    cursor: pointer;
   }
 }/*# sourceMappingURL=estilos.css.map */
