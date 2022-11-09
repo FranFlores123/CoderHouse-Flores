@@ -948,10 +948,13 @@ footer .redes a {
     text-align: center;
     font-size: 1.5rem;
   }
+  main .back2 .pres__lista {
+    width: 90vw;
+  }
   main .back2 .pres__lista ul {
     padding-left: 0rem;
     line-height: 0.5rem;
-    width: 45vw;
+    width: 50vw;
     font-size: 1.3rem;
   }
   main .back3 h2,
