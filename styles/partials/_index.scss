@@ -9,7 +9,7 @@
 
     a {
         text-decoration: none;
-        color: rgb(255, 255, 255);
+        color: #ffffff;
         text-align: center;
     }
 }
@@ -58,7 +58,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(68, 68, 68, 0.562);
+            background-color: #4444448f;
         }
 
         h1 {
@@ -97,15 +97,10 @@
 
 .side__box {
     z-index: 1;
-    font-family: 'Satisfy', cursive;
+    font-family: $fontSatisfy;
     font-size: 7vh;
     -webkit-animation: scale-up-ver-top 0.3s cubic-bezier(0.8, 0.8, 0.8, 1.000) both;
     animation: scale-up-ver-top 0.3s cubic-bezier(0.8, 0.8, 0.8, 1.000) both;
-
-    &:hover {
-        background-color: #000000;
-        transition: 0.5s;
-    }
 }
 
 @for $box from 2 through 5 {

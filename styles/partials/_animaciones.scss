@@ -1,4 +1,3 @@
-
 @for $animD from 3 through 5 {
     .box:nth-child(#{$animD}) {
         animation-delay: $animD*0.15s;

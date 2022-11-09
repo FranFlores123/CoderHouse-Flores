@@ -59,15 +59,15 @@
                 color: #ffffff;
                 padding-inline: 2.5vw;
                 text-align: center;
-                font-family: 'Marcellus SC', serif;
+                font-family: $fontMarcellus;
             }
 
             a {
-                font-family: 'Rubik Dirt', cursive;
+                font-family: $fontRubik;
                 color: #ffffff;
                 font-size: 2.2vh;
                 text-decoration: none;
-                background-color: #ff6347;
+                background-color: $mainColor;
                 padding: 1rem;
                 border-radius: 10px;
                 font-weight: 400;
