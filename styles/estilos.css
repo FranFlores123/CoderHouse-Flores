@@ -938,7 +938,7 @@ footer .redes a {
     padding-top: 25vh;
   }
   main .back2 {
-    padding-top: 20vh;
+    padding-top: 10vh;
   }
   main .back2 h2 {
     text-align: center;
@@ -946,12 +946,13 @@ footer .redes a {
   }
   main .back2 p {
     text-align: center;
+    font-size: 1.5rem;
   }
   main .back2 .pres__lista ul {
     padding-left: 0rem;
-    line-height: 1rem;
+    line-height: 0.5rem;
     width: 45vw;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
   main .back3 h2,
 main .back3 p {
@@ -960,12 +961,12 @@ main .back3 p {
   main .back4,
 main .back5 {
     padding-top: 20vh;
-    padding-left: 10vw;
+    padding-inline: 5vw;
   }
   main .back4 > p {
-    font-size: 2rem;
-    padding-inline: 5vw;
-    line-height: 4rem;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    text-align: center;
   }
   main .back5 p {
     text-align: center;

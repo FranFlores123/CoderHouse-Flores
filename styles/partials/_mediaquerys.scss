@@ -212,7 +212,7 @@
 
     main {
         .back2 {
-            padding-top: 20vh;
+            padding-top: 10vh;
 
             h2 {
                 text-align: center;
@@ -221,14 +221,15 @@
 
             p {
                 text-align: center;
+                font-size: 1.5rem;
             }
 
             .pres__lista {
                 ul {
                     padding-left: 0rem;
-                    line-height: 1rem;
+                    line-height: 0.5rem;
                     width: 45vw;
-                    font-size: 1.2rem;
+                    font-size: 1.3rem;
                 }
             }
         }
@@ -241,13 +242,13 @@
         .back4,
         .back5 {
             padding-top: 20vh;
-            padding-left: 10vw;
+            padding-inline: 5vw;
         }
 
         .back4>p {
-            font-size: 2rem;
-            padding-inline: 5vw;
-            line-height: 4rem;
+            font-size: 1.5rem;
+            line-height: 2.5rem;
+            text-align: center;
         }
 
         .back5 p {
