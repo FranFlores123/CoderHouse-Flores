@@ -1,0 +1,103 @@
+.contacto {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-image: url(../images/background_contacto2.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 2rem;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 5rem;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(41, 35, 35, 0.664);
+    }
+
+    .contacto__mensaje {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        padding-top: 20vh;
+        align-items: center;
+        color: #ffffff;
+        z-index: 1;
+        text-shadow: 1px 1px 1px #000000;
+
+        h2 {
+            font-size: 4vw;
+            text-transform: uppercase;
+            font-family: $fontRubik;
+
+            span {
+                color: $mainColor;
+                text-shadow: 1px 1px 1px #ffffff;
+            }
+        }
+
+        h3 {
+            font-size: 3vw;
+            font-family: $fontSatisfy;
+            padding-bottom: 4rem;
+        }
+
+        p {
+            text-align: center;
+            padding-inline: 10rem;
+            font-weight: 900;
+            font-size: 2.5vh;
+            font-family: $fontMarcellus;
+        }
+    }
+
+    .contacto__formulario {
+        flex: 1;
+        padding-top: 4rem;
+        display: flex;
+        justify-content: center;
+        z-index: 1;
+        color: #ffffff;
+        height: 100%;
+
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 70%;
+            font-size: 2rem;
+            gap: 1rem;
+            font-family: $fontMarcellus;
+
+            input {
+                padding: 0.5rem;
+                font-family: $fontMarcellus;
+                font-weight: 400;
+                font-size: 1.5rem;
+                color: $mainColor;
+            }
+
+            .botones {
+                display: flex;
+                align-items: centers;
+                width: 100%;
+                height: 6rem;
+                gap: 2rem;
+                padding-top: 1.5rem;
+
+                .submit,
+                .reset {
+                    background-color: $mainColor;
+                    display: block;
+                    border-radius: 20px;
+                    padding: 1rem;
+                    border: none;
+                    color: white;
+                    font-size: 2rem;
+                    font-family: $fontMarcellus;
+                }
+            }
+        }
+    }  
+}
