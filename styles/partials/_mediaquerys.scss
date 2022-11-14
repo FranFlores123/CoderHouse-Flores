@@ -201,6 +201,7 @@
                 p {
                     padding-top: 1rem;
                     padding-inline: 5vw;
+                    padding-bottom: 2vh;
                 }
 
                 a {
@@ -242,12 +243,12 @@
             }
 
             .pres__lista {
-                width: 90vw;
+                width: 80vw;
 
                 ul {
                     padding-left: 0rem;
                     line-height: 0.5rem;
-                    width: 50vw;
+                    width: 40vw;
                     font-size: 4vw;
                 }
             }
@@ -264,19 +265,17 @@
             padding-inline: 5vw;
         }
 
-        .back4
-            >p {
-                font-size: 5vw;
-                line-height: 2.5rem;
-                text-align: center;
-            }
+        .back4>p {
+            font-size: 5vw;
+            line-height: 2.5rem;
+            text-align: center;
+        }
 
-        .back5 
-            p {
-                text-align: center;
-                font-size: 5vw;
-                padding-right: 0;
-            }
+        .back5 p {
+            text-align: center;
+            font-size: 5vw;
+            padding-right: 0;
+        }
     }
 
     /// MEDIA QUERYS CONTACTO 480 ///
@@ -300,14 +299,21 @@
                 padding-bottom: 5vh;
             }
 
-            h3 {
-                font-size: 8vw;
-                padding-bottom: 4rem;
-            }
-
             p {
                 font-size: 5vw;
                 padding-inline: 4rem;
+            }
+
+            .wapp {
+
+                a {
+                    color: #ffffff;
+                    font-size: 9vw;
+                }
+
+                p {
+                    font-size: 7vw;
+                }
             }
         }
 

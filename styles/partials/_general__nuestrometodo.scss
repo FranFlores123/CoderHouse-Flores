@@ -43,7 +43,7 @@
         animation-direction: normal;
         animation-iteration-count: 1;
 
-        h2{
+        h2 {
             color: white;
             font-family: $fontRaleway;
             font-weight: 200;
@@ -104,11 +104,11 @@ main {
                 padding-left: 5rem;
                 height: 100%;
                 justify-content: space-between;
-                font-size: 1.8rem;
+                font-size: 2.5vw;
 
                 li {
-                
-                        i {
+
+                    i {
                         color: $mainColor;
                         z-index: 1;
                     }
@@ -116,12 +116,12 @@ main {
             }
         }
     }
-    
+
     .back3 {
         background-image: url(../images/back3.jpg);
         @extend %presentacion__back;
         display: flex;
-        padding-top: 25vh;
+        padding-top: 30vh;
         flex-direction: column;
 
         h2 {
@@ -139,12 +139,12 @@ main {
             @extend %parrafoNM;
         }
     }
-    
+
     .back4 {
         background-image: url(../images/back4.jpg);
         @extend %presentacion__back;
         display: flex;
-        padding-top: 25vh;
+        padding-top: 30vh;
         flex-direction: column;
 
         >p {
@@ -156,11 +156,11 @@ main {
             line-height: 5vh;
         }
     }
-    
+
     .back5 {
         background-image: url(../images/back5.jpg);
         @extend %presentacion__back;
-        padding-top: 25vh;
+        padding-top: 30vh;
         padding-left: 35vw;
 
         p {

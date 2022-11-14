@@ -57,15 +57,19 @@
 
         .wapp {
             display: flex;
+            align-items: center;
+            height: 7vh;
 
             a {
                 color: #ffffff;
-                font-size: 3vh;
+                font-size: 2vw;
                 margin-inline: 1rem;
             }
 
             p {
+                font-size: 1.7vw;
                 padding-inline: 0;
+                padding-bottom: 0;
             }
         }
     }
