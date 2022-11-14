@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Finger+Paint&family=Marcellus+SC&family=Roboto:wght@300;400;700;900&family=Rubik+Dirt&family=Satisfy&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;600&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -121,6 +121,10 @@ header .navbar .menu .active a {
   height: 100%;
   background-color: rgba(68, 68, 68, 0.5607843137);
 }
+.section__box .box1:hover {
+  scale: 1.2;
+  transition: all 1s;
+}
 .section__box .box1 h1 {
   color: #ffffff;
   font-size: 70px;
@@ -160,7 +164,7 @@ header .navbar .menu .active a {
 .side__box {
   z-index: 1;
   font-family: "Satisfy", cursive;
-  font-size: 7vh;
+  font-size: 4vw;
   -webkit-animation: scale-up-ver-top 0.3s cubic-bezier(0.8, 0.8, 0.8, 1) both;
   animation: scale-up-ver-top 0.3s cubic-bezier(0.8, 0.8, 0.8, 1) both;
 }
@@ -510,7 +514,7 @@ main .back5, main .back4, main .back3, main .back2, .back1 {
   height: 120vh;
 }
 
-main .back5 p, main .back4 p, main .back3 p {
+main .back5 p, main .back4 > p, main .back3 p {
   text-align: right;
   font-size: 2.5rem;
   padding-right: 10vw;
@@ -531,14 +535,8 @@ main .back5 p, main .back4 p, main .back3 p {
 .back1 .frase__inicial {
   text-align: center;
   padding-inline: 25vw;
-  padding-top: 20vh;
-  font-family: "Raleway", sans-serif;
-  color: white;
-  font-weight: 200;
-  letter-spacing: 3px;
-  font-size: 1rem;
+  padding-top: 15vh;
   position: relative;
-  line-height: 4rem;
   -webkit-animation: appear;
   animation: appear;
   -webkit-animation-duration: 1.5s;
@@ -548,7 +546,15 @@ main .back5 p, main .back4 p, main .back3 p {
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
 }
-.back1 .frase__inicial span {
+.back1 .frase__inicial h2 {
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-weight: 200;
+  letter-spacing: 3px;
+  font-size: 3rem;
+  line-height: 5rem;
+}
+.back1 .frase__inicial h2 span {
   color: #ff6347;
   text-shadow: 1px 1px 4px #000000;
 }
@@ -556,10 +562,10 @@ main .back5 p, main .back4 p, main .back3 p {
 main .back2 {
   background-image: url(../images/back2.jpg);
   display: flex;
-  color: #ffffff;
   flex-direction: column;
+  color: #ffffff;
   padding-top: 25vh;
-  padding-inline: 10vw;
+  padding-inline: 15vw;
   font-family: "Raleway", sans-serif;
   font-weight: 200;
   line-height: 3rem;
@@ -568,14 +574,14 @@ main .back2 {
 main .back2 h2 {
   color: #ff6347;
   z-index: 1;
-  font-size: 2rem;
+  font-size: 2.5rem;
   padding-bottom: 2.5rem;
   text-transform: uppercase;
   text-shadow: 1px 1px 1px #000000;
 }
 main .back2 p {
   z-index: 1;
-  font-size: 2rem;
+  font-size: 2.2rem;
   padding-bottom: 4rem;
   text-shadow: 1px 1px 1px #000000;
 }
@@ -593,7 +599,7 @@ main .back2 .pres__lista ul {
   padding-left: 5rem;
   height: 100%;
   justify-content: space-between;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 main .back2 .pres__lista ul li i {
   color: #ff6347;
@@ -621,11 +627,12 @@ main .back4 {
   padding-top: 25vh;
   flex-direction: column;
 }
-main .back4 p {
+main .back4 > p {
   text-align: left;
   padding-inline: 10vw;
-  font-size: 2rem;
+  font-size: 2.2vw;
   padding-bottom: 2rem;
+  line-height: 5vh;
 }
 main .back5 {
   background-image: url(../images/back5.jpg);
@@ -664,22 +671,36 @@ main .back5 {
   font-size: 4vw;
   text-transform: uppercase;
   font-family: "Rubik Dirt", cursive;
+  padding-bottom: 6vh;
 }
 .contacto .contacto__mensaje h2 span {
   color: #ff6347;
   text-shadow: 1px 1px 1px #ffffff;
-}
-.contacto .contacto__mensaje h3 {
-  font-size: 3vw;
-  font-family: "Satisfy", cursive;
-  padding-bottom: 4rem;
 }
 .contacto .contacto__mensaje p {
   text-align: center;
   padding-inline: 10rem;
   font-weight: 900;
   font-size: 2.5vh;
-  font-family: "Marcellus SC", serif;
+  font-family: "Raleway", sans-serif;
+  padding-bottom: 2rem;
+}
+.contacto .contacto__mensaje p span {
+  font-family: "Satisfy", cursive;
+  font-size: 2.9vh;
+  color: #ff6347;
+  text-shadow: 1px 1px 1px #000000;
+}
+.contacto .contacto__mensaje .wapp {
+  display: flex;
+}
+.contacto .contacto__mensaje .wapp a {
+  color: #ffffff;
+  font-size: 3vh;
+  margin-inline: 1rem;
+}
+.contacto .contacto__mensaje .wapp p {
+  padding-inline: 0;
 }
 .contacto .contacto__formulario {
   flex: 1;
@@ -918,7 +939,7 @@ footer .redes a {
 .section__box .box3,
 .section__box .box4,
 .section__box .box5 {
-    font-size: 6vh;
+    font-size: 6vw;
   }
 }
 @media screen and (max-width: 480px) {
@@ -981,6 +1002,7 @@ footer .redes a {
   .section__card .card .pizzaimg,
 .section__card__veggie .card .pizzaimg {
     max-width: 85%;
+    padding-bottom: 2vh;
   }
   .section__card .card .description,
 .section__card__veggie .card .description {
@@ -1020,23 +1042,27 @@ footer .redes a {
     height: 65vh;
     margin-bottom: 4vh;
   }
-  .cucina__cards .cucina__card h3 {
+  .cucina__cards .cucina__card .infocard h3 {
     font-size: 2rem;
   }
-  .cucina__cards .cucina__card p {
+  .cucina__cards .cucina__card .infocard p {
     padding-top: 1rem;
+    padding-inline: 5vw;
   }
-  .cucina__cards .cucina__card a {
+  .cucina__cards .cucina__card .infocard a {
     bottom: 2vh;
   }
   .back1 {
     height: 90vh;
   }
   .back1 .frase__inicial {
-    font-size: 1.2rem;
-    line-height: 2rem;
     padding-inline: 5%;
     padding-top: 25vh;
+  }
+  .back1 .frase__inicial h2 {
+    font-size: 5vw;
+    line-height: 2rem;
+    font-weight: 400;
   }
   main .back2 {
     padding-top: 10vh;
@@ -1047,7 +1073,7 @@ footer .redes a {
   }
   main .back2 p {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 5vw;
   }
   main .back2 .pres__lista {
     width: 90vw;
@@ -1056,7 +1082,7 @@ footer .redes a {
     padding-left: 0rem;
     line-height: 0.5rem;
     width: 50vw;
-    font-size: 1.3rem;
+    font-size: 4vw;
   }
   main .back3 h2,
 main .back3 p {
@@ -1068,12 +1094,14 @@ main .back5 {
     padding-inline: 5vw;
   }
   main .back4 > p {
-    font-size: 1.5rem;
+    font-size: 5vw;
     line-height: 2.5rem;
     text-align: center;
   }
   main .back5 p {
     text-align: center;
+    font-size: 5vw;
+    padding-right: 0;
   }
   .contacto {
     flex-direction: column;
@@ -1090,7 +1118,7 @@ main .back5 {
   }
   .contacto .contacto__mensaje h2 {
     font-size: 10vw;
-    padding-bottom: 1rem;
+    padding-bottom: 5vh;
   }
   .contacto .contacto__mensaje h3 {
     font-size: 8vw;
@@ -1111,6 +1139,7 @@ main .back5 {
   }
   .contacto .contacto__formulario form input {
     font-size: 1rem;
+    color: #000000;
   }
   .contacto .contacto__formulario form .botones .submit,
 .contacto .contacto__formulario form .botones .reset {

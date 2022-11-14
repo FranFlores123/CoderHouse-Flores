@@ -61,6 +61,11 @@
             background-color: #4444448f;
         }
 
+        &:hover {
+            scale: 1.2;
+            transition: all 1s;
+        }
+
         h1 {
             color: #ffffff;
             font-size: 70px;
@@ -98,7 +103,7 @@
 .side__box {
     z-index: 1;
     font-family: $fontSatisfy;
-    font-size: 7vh;
+    font-size: 4vw;
     -webkit-animation: scale-up-ver-top 0.3s cubic-bezier(0.8, 0.8, 0.8, 1.000) both;
     animation: scale-up-ver-top 0.3s cubic-bezier(0.8, 0.8, 0.8, 1.000) both;
 }

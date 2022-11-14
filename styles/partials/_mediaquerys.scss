@@ -58,7 +58,7 @@
         .box3,
         .box4,
         .box5 {
-            font-size: 6vh;
+            font-size: 6vw;
         }
     }
 }
@@ -144,6 +144,7 @@
 
             .pizzaimg {
                 max-width: 85%;
+                padding-bottom: 2vh;
             }
 
             .description {
@@ -191,16 +192,20 @@
             height: 65vh;
             margin-bottom: 4vh;
 
-            h3 {
-                font-size: 2rem;
-            }
+            .infocard {
 
-            p {
-                padding-top: 1rem;
-            }
+                h3 {
+                    font-size: 2rem;
+                }
 
-            a {
-                bottom: 2vh;
+                p {
+                    padding-top: 1rem;
+                    padding-inline: 5vw;
+                }
+
+                a {
+                    bottom: 2vh;
+                }
             }
         }
     }
@@ -211,10 +216,14 @@
         height: 90vh;
 
         .frase__inicial {
-            font-size: 1.2rem;
-            line-height: 2rem;
             padding-inline: 5%;
             padding-top: 25vh;
+
+            h2 {
+                font-size: 5vw;
+                line-height: 2rem;
+                font-weight: 400;
+            }
         }
     }
 
@@ -229,16 +238,17 @@
 
             p {
                 text-align: center;
-                font-size: 1.5rem;
+                font-size: 5vw;
             }
 
             .pres__lista {
                 width: 90vw;
+
                 ul {
                     padding-left: 0rem;
                     line-height: 0.5rem;
                     width: 50vw;
-                    font-size: 1.3rem;
+                    font-size: 4vw;
                 }
             }
         }
@@ -254,20 +264,23 @@
             padding-inline: 5vw;
         }
 
-        .back4>p {
-            font-size: 1.5rem;
-            line-height: 2.5rem;
-            text-align: center;
-        }
+        .back4
+            >p {
+                font-size: 5vw;
+                line-height: 2.5rem;
+                text-align: center;
+            }
 
-        .back5 p {
-            text-align: center;
-        }
-
+        .back5 
+            p {
+                text-align: center;
+                font-size: 5vw;
+                padding-right: 0;
+            }
     }
 
     /// MEDIA QUERYS CONTACTO 480 ///
-    
+
     .contacto {
         flex-direction: column;
         height: 200vh;
@@ -284,7 +297,7 @@
 
             h2 {
                 font-size: 10vw;
-                padding-bottom: 1rem;
+                padding-bottom: 5vh;
             }
 
             h3 {
@@ -309,9 +322,11 @@
 
                 input {
                     font-size: 1rem;
+                    color: #000000;
                 }
 
                 .botones {
+
                     .submit,
                     .reset {
                         font-size: 1.5rem;
@@ -354,14 +369,14 @@
         transition: all 0.3s;
     }
 
-    
+
     .side__box:hover {
         background-color: #000000;
         transition: 0.5s;
     }
 
     .navbar {
-        
+
         .menu {
 
             .menu__item {
@@ -414,9 +429,9 @@
     .cucina__cards {
 
         .cucina__card {
-    
+
             .infocard {
-    
+
                 a {
                     &:hover {
                         background-color: $bgColor2;
