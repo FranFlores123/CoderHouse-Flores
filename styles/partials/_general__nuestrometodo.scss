@@ -29,7 +29,7 @@
 }
 
 .back1 {
-    background-image: url(../../images/back1.jpg);
+    background-image: url(../images/back1.jpg);
     @extend %presentacion__back;
 
     .frase__inicial {
@@ -44,7 +44,7 @@
         animation-iteration-count: 1;
 
         h2 {
-            color: white;
+            color: #ffffff;
             font-family: $fontRaleway;
             font-weight: 200;
             letter-spacing: 3px;
@@ -63,7 +63,7 @@ main {
 
     .back2 {
         @extend %presentacion__back;
-        background-image: url(../../images/back2.jpg);
+        background-image: url(../images/back2.jpg);
         display: flex;
         flex-direction: column;
         color: #ffffff;
@@ -118,7 +118,7 @@ main {
     }
 
     .back3 {
-        background-image: url(../../images/back3.jpg);
+        background-image: url(../images/back3.jpg);
         @extend %presentacion__back;
         display: flex;
         padding-top: 30vh;
@@ -141,7 +141,7 @@ main {
     }
 
     .back4 {
-        background-image: url(../../images/back4.jpg);
+        background-image: url(../images/back4.jpg);
         @extend %presentacion__back;
         display: flex;
         padding-top: 30vh;
@@ -158,7 +158,7 @@ main {
     }
 
     .back5 {
-        background-image: url(../../images/back5.jpg);
+        background-image: url(../images/back5.jpg);
         @extend %presentacion__back;
         padding-top: 30vh;
         padding-left: 35vw;
