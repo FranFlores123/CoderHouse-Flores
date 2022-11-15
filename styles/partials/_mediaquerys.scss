@@ -287,7 +287,7 @@
         background-position: center;
 
         &::before {
-            height: 500%;
+            height: 230%;
             top: 4rem;
         }
 
@@ -319,6 +319,7 @@
         }
 
         .contacto__formulario {
+            padding-top: 7vh;
 
             form {
                 width: 80vw;
@@ -340,14 +341,6 @@
                     &::placeholder {
                         font-size: 1.3rem;
                     }
-                }
-
-
-                .submit,
-                .reset {
-                    font-size: 2.5vh;
-                    width: 50%;
-                    height: 7vh;
                 }
             }
         }
@@ -425,23 +418,6 @@
         }
     }
 
-    .contacto__formulario {
-
-        form {
-
-            .submit,
-            .reset {
-
-                &:hover {
-                    background-color: $bgColor2;
-                    cursor: pointer;
-                }
-            }
-        }
-    }
-        
-    
-
     .cucina__cards {
 
         .cucina__card {
@@ -453,6 +429,21 @@
                         background-color: $bgColor2;
                         cursor: pointer;
                     }
+                }
+            }
+        }
+    }
+
+    .contacto__formulario {
+
+        form {
+
+            .submit,
+            .reset {
+
+                &:hover {
+                    background-color: $bgColor2;
+                    cursor: pointer;
                 }
             }
         }

@@ -33,6 +33,27 @@
         </nav>
     </header>
     <main class="contacto">
+
+        <section class="contacto__formulario">
+            <form action="enviar.php" method="post" enctype="text/plain">
+
+                <input class="nombre" name="names" type="text" placeholder="NOMBRE" required>
+
+                <input class="apellido" name="apellido" type="text" placeholder="APELLIDO" required>
+
+                <input class="edad" name="edad" type="number" placeholder="EDAD" required>
+
+                <input class="email" name="mail" type="email" placeholder="EMAIL" required>
+
+                <input class="mensaje" name="mensaje" type="textarea" placeholder="contanos como podemos ayudarte"
+                    required>
+
+                <input class="submit" type="submit" value="enviar">
+
+                <input class="reset" type="reset" value="reset">
+            </form>
+        </section>
+
         <section class="contacto__mensaje">
             <h2> pizza <span>house</span></h2>
             <p>Escribinos por cualquier consulta.</p>
@@ -42,25 +63,6 @@
                 <a href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
                 <p>011 XXX-XXXXX</p>
             </div>
-        </section>
-        <section class="contacto__formulario">
-            <form action="enviar.php" method="post" enctype="text/plain">
-
-                    <input class="nombre" name="names" type="text" placeholder="NOMBRE" required>
-
-                    <input class="apellido" name="apellido" type="text" placeholder="APELLIDO" required>
-
-                    <input class="edad" name="edad" type="number" placeholder="EDAD" required>
-
-                    <input class="email" name="mail" type="email" placeholder="EMAIL" required>
-
-                    <input class="mensaje" name="mensaje" type="textarea" placeholder="contanos como podemos ayudarte"
-                        required>
-
-                    <input class="submit" type="submit" value="enviar">
-
-                    <input class="reset" type="reset" value="reset">
-            </form>
         </section>
     </main>
     <footer class="footer__margin">

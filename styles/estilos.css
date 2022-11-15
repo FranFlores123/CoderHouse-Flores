@@ -657,55 +657,6 @@ main .back5 {
   height: 100vh;
   background-color: rgba(41, 35, 35, 0.662745098);
 }
-.contacto .contacto__mensaje {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  padding-block: 20vh;
-  align-items: center;
-  color: #ffffff;
-  z-index: 1;
-  text-shadow: 1px 1px 1px #000000;
-}
-.contacto .contacto__mensaje h2 {
-  font-size: 4vw;
-  text-transform: uppercase;
-  font-family: "Rubik Dirt", cursive;
-  padding-bottom: 6vh;
-}
-.contacto .contacto__mensaje h2 span {
-  color: #fc8600;
-  text-shadow: 1px 1px 1px #ffffff;
-}
-.contacto .contacto__mensaje p {
-  text-align: center;
-  padding-inline: 10rem;
-  font-weight: 900;
-  font-size: 2.5vh;
-  font-family: "Raleway", sans-serif;
-  padding-bottom: 2rem;
-}
-.contacto .contacto__mensaje p span {
-  font-family: "Satisfy", cursive;
-  font-size: 2.9vh;
-  color: #fc8600;
-  text-shadow: 1px 1px 1px #000000;
-}
-.contacto .contacto__mensaje .wapp {
-  display: flex;
-  align-items: center;
-  height: 7vh;
-}
-.contacto .contacto__mensaje .wapp a {
-  color: #ffffff;
-  font-size: 2vw;
-  margin-inline: 1rem;
-}
-.contacto .contacto__mensaje .wapp p {
-  font-size: 1.7vw;
-  padding-inline: 0;
-  padding-bottom: 0;
-}
 .contacto .contacto__formulario {
   flex: 1;
   padding-block: 5vh;
@@ -764,8 +715,57 @@ main .back5 {
   background-color: #fc8600;
   border-radius: 20px;
   border: none;
-  width: 10vw;
+  width: 160px;
   color: #ffffff;
+}
+.contacto .contacto__mensaje {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding-block: 20vh;
+  align-items: center;
+  color: #ffffff;
+  z-index: 1;
+  text-shadow: 1px 1px 1px #000000;
+}
+.contacto .contacto__mensaje h2 {
+  font-size: 4vw;
+  text-transform: uppercase;
+  font-family: "Rubik Dirt", cursive;
+  padding-bottom: 6vh;
+}
+.contacto .contacto__mensaje h2 span {
+  color: #fc8600;
+  text-shadow: 1px 1px 1px #ffffff;
+}
+.contacto .contacto__mensaje p {
+  text-align: center;
+  padding-inline: 10rem;
+  font-weight: 900;
+  font-size: 2.5vh;
+  font-family: "Raleway", sans-serif;
+  padding-bottom: 2rem;
+}
+.contacto .contacto__mensaje p span {
+  font-family: "Satisfy", cursive;
+  font-size: 2.9vh;
+  color: #fc8600;
+  text-shadow: 1px 1px 1px #000000;
+}
+.contacto .contacto__mensaje .wapp {
+  display: flex;
+  align-items: center;
+  height: 7vh;
+}
+.contacto .contacto__mensaje .wapp a {
+  color: #ffffff;
+  font-size: 2vw;
+  margin-inline: 1rem;
+}
+.contacto .contacto__mensaje .wapp p {
+  font-size: 1.7vw;
+  padding-inline: 0;
+  padding-bottom: 0;
 }
 
 footer {
@@ -1133,7 +1133,7 @@ main .back5 {
     background-position: center;
   }
   .contacto::before {
-    height: 500%;
+    height: 230%;
     top: 4rem;
   }
   .contacto .contacto__mensaje {
@@ -1155,6 +1155,9 @@ main .back5 {
   .contacto .contacto__mensaje .wapp p {
     font-size: 7vw;
   }
+  .contacto .contacto__formulario {
+    padding-top: 7vh;
+  }
   .contacto .contacto__formulario form {
     width: 80vw;
     grid-template-columns: 1fr;
@@ -1173,12 +1176,6 @@ main .back5 {
   }
   .contacto .contacto__formulario form input::placeholder {
     font-size: 1.3rem;
-  }
-  .contacto .contacto__formulario form .submit,
-.contacto .contacto__formulario form .reset {
-    font-size: 2.5vh;
-    width: 50%;
-    height: 7vh;
   }
   footer .navbar__footer {
     padding-bottom: 0rem;
@@ -1211,12 +1208,12 @@ main .back5 {
     background-color: #864f45;
     cursor: pointer;
   }
-  .contacto__formulario form .submit:hover,
-.contacto__formulario form .reset:hover {
+  .cucina__cards .cucina__card .infocard a:hover {
     background-color: #864f45;
     cursor: pointer;
   }
-  .cucina__cards .cucina__card .infocard a:hover {
+  .contacto__formulario form .submit:hover,
+.contacto__formulario form .reset:hover {
     background-color: #864f45;
     cursor: pointer;
   }

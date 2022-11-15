@@ -17,63 +17,6 @@
         background-color: #292323a9;
     }
 
-    .contacto__mensaje {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        padding-block: 20vh;
-        align-items: center;
-        color: #ffffff;
-        z-index: 1;
-        text-shadow: 1px 1px 1px #000000;
-
-        h2 {
-            font-size: 4vw;
-            text-transform: uppercase;
-            font-family: $fontRubik;
-            padding-bottom: 6vh;
-
-            span {
-                color: $mainColor;
-                text-shadow: 1px 1px 1px #ffffff;
-            }
-        }
-
-        p {
-            text-align: center;
-            padding-inline: 10rem;
-            font-weight: 900;
-            font-size: 2.5vh;
-            font-family: $fontRaleway;
-            padding-bottom: 2rem;
-
-            span {
-                font-family: $fontSatisfy;
-                font-size: 2.9vh;
-                color: $mainColor;
-                text-shadow: 1px 1px 1px #000000;
-            }
-        }
-
-        .wapp {
-            display: flex;
-            align-items: center;
-            height: 7vh;
-
-            a {
-                color: #ffffff;
-                font-size: 2vw;
-                margin-inline: 1rem;
-            }
-
-            p {
-                font-size: 1.7vw;
-                padding-inline: 0;
-                padding-bottom: 0;
-            }
-        }
-    }
-
     .contacto__formulario {
         flex: 1;
         padding-block: 5vh;
@@ -132,14 +75,70 @@
                 }
             }
 
-
             .submit,
             .reset {
                 background-color: $mainColor;
                 border-radius: 20px;
                 border: none;
-                width: 10vw;
+                width: 160px;
                 color: #ffffff;
+            }
+        }
+    }
+
+    .contacto__mensaje {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        padding-block: 20vh;
+        align-items: center;
+        color: #ffffff;
+        z-index: 1;
+        text-shadow: 1px 1px 1px #000000;
+
+        h2 {
+            font-size: 4vw;
+            text-transform: uppercase;
+            font-family: $fontRubik;
+            padding-bottom: 6vh;
+
+            span {
+                color: $mainColor;
+                text-shadow: 1px 1px 1px #ffffff;
+            }
+        }
+
+        p {
+            text-align: center;
+            padding-inline: 10rem;
+            font-weight: 900;
+            font-size: 2.5vh;
+            font-family: $fontRaleway;
+            padding-bottom: 2rem;
+
+            span {
+                font-family: $fontSatisfy;
+                font-size: 2.9vh;
+                color: $mainColor;
+                text-shadow: 1px 1px 1px #000000;
+            }
+        }
+
+        .wapp {
+            display: flex;
+            align-items: center;
+            height: 7vh;
+
+            a {
+                color: #ffffff;
+                font-size: 2vw;
+                margin-inline: 1rem;
+            }
+
+            p {
+                font-size: 1.7vw;
+                padding-inline: 0;
+                padding-bottom: 0;
             }
         }
     }
