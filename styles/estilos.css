@@ -716,6 +716,9 @@ main .back5 {
   height: 100vh;
   width: 100%;
 }
+.contacto .contacto__formulario form {
+  height: auto;
+}
 .contacto .contacto__formulario form fieldset {
   display: flex;
   flex-direction: column;
@@ -737,9 +740,9 @@ main .back5 {
   display: flex;
   align-items: center;
   width: 100%;
-  height: 6rem;
-  gap: 2rem;
-  padding-top: 1.5rem;
+  height: auto;
+  gap: 2vw;
+  padding-top: 1.8vh;
 }
 .contacto .contacto__formulario form fieldset .botones .submit,
 .contacto .contacto__formulario form fieldset .botones .reset {
@@ -1113,7 +1116,7 @@ main .back5 {
   }
   .contacto {
     flex-direction: column;
-    height: 200vh;
+    height: 180vh;
     background-image: url(../images/background_contacto.jpg);
   }
   .contacto::before {
