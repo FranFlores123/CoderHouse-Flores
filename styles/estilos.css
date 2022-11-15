@@ -1140,7 +1140,7 @@ main .back5 {
     font-size: 7vw;
   }
   .contacto .contacto__formulario {
-    height: 100vh;
+    height: auto;
   }
   .contacto .contacto__formulario form fieldset {
     display: flex;
