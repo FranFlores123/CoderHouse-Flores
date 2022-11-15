@@ -254,7 +254,7 @@ header .navbar .menu .active a {
   justify-content: center;
   height: 45vh;
   width: 30vw;
-  box-shadow: 4px 4px 10spx rgba(0, 0, 0, 0.459);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.459);
   border-radius: 20px;
   background-color: rgba(107, 57, 28, 0.6431372549);
 }
@@ -1023,7 +1023,7 @@ footer .redes a {
   }
   .section__card .card .pizzaimg,
 .section__card__veggie .card .pizzaimg {
-    max-width: 85%;
+    max-width: 70vw;
     padding-bottom: 2vh;
   }
   .section__card .card .description,
