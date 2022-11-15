@@ -717,21 +717,28 @@ main .back5 {
   width: 100%;
 }
 .contacto .contacto__formulario form {
-  height: auto;
+  display: grid;
+  gap: 5vh;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-areas: "nombre     nombre" "apellido   apellido" "edad       edad" "email      email" "mensaje    mensaje" "mensaje    mensaje";
 }
-.contacto .contacto__formulario form fieldset {
-  display: flex;
-  flex-direction: column;
-  border: none;
-  width: 40vw;
-  height: auto;
-  gap: 1rem;
+.contacto .contacto__formulario form .nombre {
+  grid-area: nombre;
 }
-.contacto .contacto__formulario form fieldset label {
-  font-family: "Marcellus SC", serif;
-  font-size: 1.3rem;
+.contacto .contacto__formulario form .apellido {
+  grid-area: apellido;
 }
-.contacto .contacto__formulario form fieldset input {
+.contacto .contacto__formulario form .edad {
+  grid-area: edad;
+}
+.contacto .contacto__formulario form .email {
+  grid-area: email;
+}
+.contacto .contacto__formulario form .mensaje {
+  grid-area: mensaje;
+}
+.contacto .contacto__formulario form input {
   height: auto;
   width: 35vw;
   padding: 2%;
@@ -739,22 +746,14 @@ main .back5 {
   font-family: "Marcellus SC", serif;
   color: #ff8a04;
 }
-.contacto .contacto__formulario form fieldset .botones {
-  display: flex;
-  align-items: center;
-  width: 10vw;
-  height: auto;
-  gap: 2vw;
-  padding-top: 1.8vh;
-}
-.contacto .contacto__formulario form fieldset .botones .submit,
-.contacto .contacto__formulario form fieldset .botones .reset {
+.contacto .contacto__formulario form .submit,
+.contacto .contacto__formulario form .reset {
   background-color: #ff8a04;
-  display: block;
   border-radius: 20px;
+  width: 10vw;
   padding: 1rem;
   border: none;
-  color: white;
+  color: #ffffff;
   font-size: 1.5rem;
   font-family: "Marcellus SC", serif;
 }
@@ -1121,9 +1120,10 @@ main .back5 {
     flex-direction: column;
     height: 100%;
     background-image: url(../images/background_contacto.jpg);
+    background-position: center;
   }
   .contacto::before {
-    height: 200%;
+    height: 500%;
     top: 4rem;
   }
   .contacto .contacto__mensaje {
@@ -1145,25 +1145,20 @@ main .back5 {
   .contacto .contacto__mensaje .wapp p {
     font-size: 7vw;
   }
-  .contacto .contacto__formulario form fieldset {
-    display: flex;
-    flex-direction: column;
+  .contacto .contacto__formulario form {
     width: 80vw;
-    height: auto;
-    font-size: 2.7vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: "nombre" "apellido" "edad" "email" "mensaje" "mensaje";
   }
-  .contacto .contacto__formulario form fieldset input {
+  .contacto .contacto__formulario form input {
     color: #000000;
     width: 100%;
   }
-  .contacto .contacto__formulario form fieldset .botones {
-    justify-content: center;
-    gap: 10vw;
-    width: 100%;
-  }
-  .contacto .contacto__formulario form fieldset .botones .submit,
-.contacto .contacto__formulario form fieldset .botones .reset {
+  .contacto .contacto__formulario form .submit,
+.contacto .contacto__formulario form .reset {
     font-size: 2.5vh;
+    width: 50%;
   }
   footer .navbar__footer {
     padding-bottom: 0rem;

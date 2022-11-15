@@ -284,9 +284,10 @@
         flex-direction: column;
         height: 100%;
         background-image: url(../images/background_contacto.jpg);
+        background-position: center;
 
         &::before {
-            height: 200%;
+            height: 500%;
             top: 4rem;
         }
 
@@ -320,34 +321,32 @@
         .contacto__formulario {
 
             form {
-                fieldset {
-                    display: flex;
-                    flex-direction: column;
-                    width: 80vw;
-                    height: auto;
-                    font-size: 2.7vh;
+                width: 80vw;
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(6, 1fr);
+                grid-template-areas:
+                    "nombre"
+                    "apellido"
+                    "edad"
+                    "email"
+                    "mensaje"
+                    "mensaje";
 
-                    input {
-                        color: #000000;
-                        width: 100%;
-                    }
-
-                    .botones {
-                        justify-content: center;
-                        gap: 10vw;
-                        width: 100%;
+                input {
+                    color: #000000;
+                    width: 100%;
+                }
 
 
-                        .submit,
-                        .reset {
-                            font-size: 2.5vh;
-                        }
-
-                    }
+                .submit,
+                .reset {
+                    font-size: 2.5vh;
+                    width: 50%;
                 }
             }
-        }    
+        }
     }
+
 
 
     /// MEDIA QUERYS FOOTER 480 ///

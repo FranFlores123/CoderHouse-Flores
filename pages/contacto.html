@@ -44,29 +44,22 @@
             </div>
         </section>
         <section class="contacto__formulario">
-            <form action="" method="get" id="formulario">
-                <fieldset>
+            <form action="enviar.php" method="post" enctype="text/plain">
 
-                    <label for="names">Nombre</label>
-                    <input id="names" name="names" type="text" required>
+                    <input class="nombre" name="names" type="text" placeholder="NOMBRE" required>
 
-                    <label for="apellido">Apellido</label>
-                    <input id="apellido" name="apellido" type="text" required>
+                    <input class="apellido" name="apellido" type="text" placeholder="APELLIDO" required>
 
-                    <label for="edad">Edad</label>
-                    <input id="edad" name="edad" type="number" required>
+                    <input class="edad" name="edad" type="number" placeholder="EDAD" required>
 
-                    <label for="mail">Correo</label>
-                    <input id="mail" name="mail" type="email" required>
+                    <input class="email" name="mail" type="email" placeholder="EMAIL" required>
 
-                    <label for="date">Comentarios</label>
-                    <input id="coment" name="apellido" type="text" placeholder="contanos como podemos ayudarte"
-                        required></textarea>
-                    <div class="botones">
-                        <input class="submit" type="submit" value="enviar">
-                        <input class="reset" type="reset" value="reset">
-                    </div>
-                </fieldset>
+                    <input class="mensaje" name="mensaje" type="textarea" placeholder="contanos como podemos ayudarte"
+                        required>
+
+                    <input class="submit" type="submit" value="enviar">
+
+                    <input class="reset" type="reset" value="reset">
             </form>
         </section>
     </main>
