@@ -7,11 +7,11 @@
 }
 *::-moz-selection {
   background-color: #000000;
-  color: #ff8800;
+  color: #ff8a04;
 }
 *::selection {
   background-color: #000000;
-  color: #ff8800;
+  color: #ff8a04;
 }
 
 .imgiconomenu {
@@ -57,7 +57,7 @@ header .navbar .menu .menu__item a {
   text-decoration: none;
 }
 header .navbar .menu .active a {
-  color: #ff8800;
+  color: #ff8a04;
 }
 
 .body__home {
@@ -86,7 +86,7 @@ header .navbar .menu .active a {
 }
 .section__box .box2,
 .section__box .box5 {
-  background-color: #ff8800;
+  background-color: #ff8a04;
 }
 .section__box .box3,
 .section__box .box4 {
@@ -143,10 +143,10 @@ header .navbar .menu .active a {
           animation-iteration-count: initial;
 }
 .section__box .box1 h1 span {
-  color: #ff8800;
+  color: #ff8a04;
 }
 .section__box .box1 h2 {
-  color: #ff8800;
+  color: #ff8a04;
   font-size: 50px;
   font-family: "Satisfy", cursive;
   z-index: 1;
@@ -235,7 +235,7 @@ header .navbar .menu .active a {
   text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5607843137);
 }
 .background__pizza .background__title h2 span {
-  color: #ff8800;
+  color: #ff8a04;
 }
 
 .section__card__veggie, .section__card {
@@ -290,7 +290,7 @@ header .navbar .menu .active a {
   color: rgb(255, 255, 255);
   text-decoration: none;
   font-size: 1.2vw;
-  background-color: #ff8800;
+  background-color: #ff8a04;
   padding: 5%;
   font-weight: 300;
   border-radius: 15px;
@@ -426,7 +426,7 @@ header .navbar .menu .active a {
   font-size: 8vh;
 }
 .veggie__title h2 span {
-  color: #ff8800;
+  color: #ff8a04;
 }
 
 .cucina__cards {
@@ -472,7 +472,7 @@ header .navbar .menu .active a {
 }
 .cucina__cards .cucina__card .infocard h3 {
   font-family: "Rubik Dirt", cursive;
-  color: #ff8800;
+  color: #ff8a04;
   text-transform: uppercase;
   padding-bottom: 1rem;
   font-size: 3vh;
@@ -493,7 +493,7 @@ header .navbar .menu .active a {
   color: #ffffff;
   font-size: 2.2vh;
   text-decoration: none;
-  background-color: #ff8800;
+  background-color: #ff8a04;
   padding: 1rem;
   border-radius: 10px;
   font-weight: 400;
@@ -555,7 +555,7 @@ main .back5 p, main .back4 > p, main .back3 p {
   line-height: 5rem;
 }
 .back1 .frase__inicial h2 span {
-  color: #ff8800;
+  color: #ff8a04;
   text-shadow: 1px 1px 4px #000000;
 }
 
@@ -572,7 +572,7 @@ main .back2 {
   width: 100%;
 }
 main .back2 h2 {
-  color: #ff8800;
+  color: #ff8a04;
   z-index: 1;
   font-size: 2.5rem;
   padding-bottom: 2.5rem;
@@ -602,7 +602,7 @@ main .back2 .pres__lista ul {
   font-size: 1.5vw;
 }
 main .back2 .pres__lista ul li i {
-  color: #ff8800;
+  color: #ff8a04;
   z-index: 1;
 }
 main .back3 {
@@ -617,7 +617,7 @@ main .back3 h2 {
   padding-left: 10vw;
   font-size: 3rem;
   padding-bottom: 4rem;
-  color: #ff8800;
+  color: #ff8a04;
   z-index: 1;
   text-shadow: 1px 1px 3px #2c2929;
 }
@@ -674,7 +674,7 @@ main .back5 {
   padding-bottom: 6vh;
 }
 .contacto .contacto__mensaje h2 span {
-  color: #ff8800;
+  color: #ff8a04;
   text-shadow: 1px 1px 1px #ffffff;
 }
 .contacto .contacto__mensaje p {
@@ -688,7 +688,7 @@ main .back5 {
 .contacto .contacto__mensaje p span {
   font-family: "Satisfy", cursive;
   font-size: 2.9vh;
-  color: #ff8800;
+  color: #ff8a04;
   text-shadow: 1px 1px 1px #000000;
 }
 .contacto .contacto__mensaje .wapp {
@@ -708,7 +708,7 @@ main .back5 {
 }
 .contacto .contacto__formulario {
   flex: 1;
-  padding-block: 10vh;
+  padding-block: 5vh;
   display: flex;
   justify-content: center;
   z-index: 1;
@@ -725,34 +725,37 @@ main .back5 {
   border: none;
   width: 40vw;
   height: auto;
-  font-size: 2rem;
   gap: 1rem;
+}
+.contacto .contacto__formulario form fieldset label {
   font-family: "Marcellus SC", serif;
+  font-size: 1.3rem;
 }
 .contacto .contacto__formulario form fieldset input {
-  padding: 0.5rem;
+  height: auto;
+  width: 35vw;
+  padding: 2%;
+  font-size: 1.3rem;
   font-family: "Marcellus SC", serif;
-  font-weight: 400;
-  font-size: 1.5rem;
-  color: #ff8800;
+  color: #ff8a04;
 }
 .contacto .contacto__formulario form fieldset .botones {
   display: flex;
   align-items: center;
-  width: 100%;
+  width: 10vw;
   height: auto;
   gap: 2vw;
   padding-top: 1.8vh;
 }
 .contacto .contacto__formulario form fieldset .botones .submit,
 .contacto .contacto__formulario form fieldset .botones .reset {
-  background-color: #ff8800;
+  background-color: #ff8a04;
   display: block;
   border-radius: 20px;
   padding: 1rem;
   border: none;
   color: white;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-family: "Marcellus SC", serif;
 }
 
@@ -786,7 +789,7 @@ footer .footer__title h2 {
   word-spacing: 10px;
 }
 footer .footer__title h2 span {
-  color: #ff8800;
+  color: #ff8a04;
 }
 footer .navbar__footer {
   height: auto;
@@ -1116,11 +1119,11 @@ main .back5 {
   }
   .contacto {
     flex-direction: column;
-    height: auto;
+    height: 100%;
     background-image: url(../images/background_contacto.jpg);
   }
   .contacto::before {
-    height: 200vh;
+    height: 200%;
     top: 4rem;
   }
   .contacto .contacto__mensaje {
@@ -1142,10 +1145,6 @@ main .back5 {
   .contacto .contacto__mensaje .wapp p {
     font-size: 7vw;
   }
-  .contacto .contacto__formulario {
-    height: auto;
-    padding-block: 15vh;
-  }
   .contacto .contacto__formulario form fieldset {
     display: flex;
     flex-direction: column;
@@ -1154,12 +1153,13 @@ main .back5 {
     font-size: 2.7vh;
   }
   .contacto .contacto__formulario form fieldset input {
-    font-size: 2.3vh;
     color: #000000;
+    width: 100%;
   }
   .contacto .contacto__formulario form fieldset .botones {
     justify-content: center;
     gap: 10vw;
+    width: 100%;
   }
   .contacto .contacto__formulario form fieldset .botones .submit,
 .contacto .contacto__formulario form fieldset .botones .reset {
@@ -1180,7 +1180,7 @@ main .back5 {
 }
 @media screen and (min-width: 900px) {
   .box a:hover {
-    color: #ff8800;
+    color: #ff8a04;
     font-size: 8vh;
     transition: all 0.3s;
   }
@@ -1189,7 +1189,7 @@ main .back5 {
     transition: 0.5s;
   }
   .navbar .menu .menu__item a:hover {
-    color: #ff8800;
+    color: #ff8a04;
   }
   .section__card .card .description a:hover,
 .section__card__veggie .card .description a:hover {

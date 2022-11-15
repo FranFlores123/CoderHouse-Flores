@@ -76,7 +76,7 @@
 
     .contacto__formulario {
         flex: 1;
-        padding-block: 10vh;
+        padding-block: 5vh;
         display: flex;
         justify-content: center;
         z-index: 1;
@@ -93,22 +93,26 @@
                 border: none;
                 width: 40vw;
                 height: auto;
-                font-size: 2rem;
                 gap: 1rem;
-                font-family: $fontMarcellus;
+                
+                label{
+                    font-family: $fontMarcellus;
+                    font-size: 1.3rem;
+                }
 
                 input {
-                    padding: 0.5rem;
+                    height: auto;
+                    width: 35vw;
+                    padding: 2%;
+                    font-size: 1.3rem;
                     font-family: $fontMarcellus;
-                    font-weight: 400;
-                    font-size: 1.5rem;
                     color: $mainColor;
                 }
 
                 .botones {
                     display: flex;
                     align-items: center;
-                    width: 100%;
+                    width: 10vw;
                     height: auto;
                     gap: 2vw;
                     padding-top: 1.8vh;
@@ -121,7 +125,7 @@
                         padding: 1rem;
                         border: none;
                         color: white;
-                        font-size: 2rem;
+                        font-size: 1.5rem;
                         font-family: $fontMarcellus;
                     }
                 }
