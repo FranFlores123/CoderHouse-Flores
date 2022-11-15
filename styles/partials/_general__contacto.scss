@@ -5,7 +5,7 @@
     background-image: url(../images/background_contacto2.jpg);
     background-size: cover;
     background-position: center;
-    padding-bottom: 2rem;
+    padding-bottom: 5vh;
 
     &::before {
         content: '';
@@ -21,7 +21,7 @@
         flex: 1;
         display: flex;
         flex-direction: column;
-        padding-top: 20vh;
+        padding-block: 20vh;
         align-items: center;
         color: #ffffff;
         z-index: 1;
@@ -76,12 +76,12 @@
 
     .contacto__formulario {
         flex: 1;
-        padding-top: 4rem;
+        padding-block: 10vh;
         display: flex;
         justify-content: center;
         z-index: 1;
         color: #ffffff;
-        height: 100vh;
+        height: auto;
         width: 100%;
 
         form {

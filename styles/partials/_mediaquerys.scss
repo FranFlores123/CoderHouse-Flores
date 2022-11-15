@@ -282,7 +282,7 @@
 
     .contacto {
         flex-direction: column;
-        height: 180vh;
+        height: auto;
         background-image: url(../images/background_contacto.jpg);
 
         &::before {
@@ -292,7 +292,7 @@
 
         .contacto__mensaje {
             height: 100vh;
-            padding-top: 15vh;
+            padding-block: 15vh;
 
             h2 {
                 font-size: 10vw;
@@ -319,25 +319,29 @@
 
         .contacto__formulario {
             height: auto;
+            padding-block: 15vh;
 
             form {
                 fieldset {
                     display: flex;
                     flex-direction: column;
                     width: 80vw;
-                    font-size: 1.5rem;
+                    height: auto;
+                    font-size: 2.7vh;
 
                     input {
-                        font-size: 1rem;
+                        font-size: 2.3vh;
                         color: #000000;
                     }
 
                     .botones {
                         justify-content: center;
+                        gap: 10vw;
+
 
                         .submit,
                         .reset {
-                            font-size: 1.5rem;
+                            font-size: 2.5vh;
                         }
 
                     }

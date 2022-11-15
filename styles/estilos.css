@@ -646,7 +646,7 @@ main .back5 {
   background-image: url(../images/background_contacto2.jpg);
   background-size: cover;
   background-position: center;
-  padding-bottom: 2rem;
+  padding-bottom: 5vh;
 }
 .contacto::before {
   content: "";
@@ -661,7 +661,7 @@ main .back5 {
   flex: 1;
   display: flex;
   flex-direction: column;
-  padding-top: 20vh;
+  padding-block: 20vh;
   align-items: center;
   color: #ffffff;
   z-index: 1;
@@ -708,12 +708,12 @@ main .back5 {
 }
 .contacto .contacto__formulario {
   flex: 1;
-  padding-top: 4rem;
+  padding-block: 10vh;
   display: flex;
   justify-content: center;
   z-index: 1;
   color: #ffffff;
-  height: 100vh;
+  height: auto;
   width: 100%;
 }
 .contacto .contacto__formulario form {
@@ -1116,7 +1116,7 @@ main .back5 {
   }
   .contacto {
     flex-direction: column;
-    height: 180vh;
+    height: auto;
     background-image: url(../images/background_contacto.jpg);
   }
   .contacto::before {
@@ -1125,7 +1125,7 @@ main .back5 {
   }
   .contacto .contacto__mensaje {
     height: 100vh;
-    padding-top: 15vh;
+    padding-block: 15vh;
   }
   .contacto .contacto__mensaje h2 {
     font-size: 10vw;
@@ -1144,23 +1144,26 @@ main .back5 {
   }
   .contacto .contacto__formulario {
     height: auto;
+    padding-block: 15vh;
   }
   .contacto .contacto__formulario form fieldset {
     display: flex;
     flex-direction: column;
     width: 80vw;
-    font-size: 1.5rem;
+    height: auto;
+    font-size: 2.7vh;
   }
   .contacto .contacto__formulario form fieldset input {
-    font-size: 1rem;
+    font-size: 2.3vh;
     color: #000000;
   }
   .contacto .contacto__formulario form fieldset .botones {
     justify-content: center;
+    gap: 10vw;
   }
   .contacto .contacto__formulario form fieldset .botones .submit,
 .contacto .contacto__formulario form fieldset .botones .reset {
-    font-size: 1.5rem;
+    font-size: 2.5vh;
   }
   footer .navbar__footer {
     padding-bottom: 0rem;
