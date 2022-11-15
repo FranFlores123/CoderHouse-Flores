@@ -713,24 +713,27 @@ main .back5 {
   justify-content: center;
   z-index: 1;
   color: #ffffff;
-  height: 100%;
+  height: 100vh;
+  width: 100%;
 }
-.contacto .contacto__formulario form {
+.contacto .contacto__formulario form fieldset {
   display: flex;
   flex-direction: column;
-  width: 70%;
+  border: none;
+  width: 40vw;
+  height: auto;
   font-size: 2rem;
   gap: 1rem;
   font-family: "Marcellus SC", serif;
 }
-.contacto .contacto__formulario form input {
+.contacto .contacto__formulario form fieldset input {
   padding: 0.5rem;
   font-family: "Marcellus SC", serif;
   font-weight: 400;
   font-size: 1.5rem;
   color: #ff6347;
 }
-.contacto .contacto__formulario form .botones {
+.contacto .contacto__formulario form fieldset .botones {
   display: flex;
   align-items: center;
   width: 100%;
@@ -738,8 +741,8 @@ main .back5 {
   gap: 2rem;
   padding-top: 1.5rem;
 }
-.contacto .contacto__formulario form .botones .submit,
-.contacto .contacto__formulario form .botones .reset {
+.contacto .contacto__formulario form fieldset .botones .submit,
+.contacto .contacto__formulario form fieldset .botones .reset {
   background-color: #ff6347;
   display: block;
   border-radius: 20px;
@@ -1139,18 +1142,21 @@ main .back5 {
   .contacto .contacto__formulario {
     height: 100vh;
   }
-  .contacto .contacto__formulario form {
+  .contacto .contacto__formulario form fieldset {
     display: flex;
     flex-direction: column;
-    width: 70%;
+    width: 80vw;
     font-size: 1.5rem;
   }
-  .contacto .contacto__formulario form input {
+  .contacto .contacto__formulario form fieldset input {
     font-size: 1rem;
     color: #000000;
   }
-  .contacto .contacto__formulario form .botones .submit,
-.contacto .contacto__formulario form .botones .reset {
+  .contacto .contacto__formulario form fieldset .botones {
+    justify-content: center;
+  }
+  .contacto .contacto__formulario form fieldset .botones .submit,
+.contacto .contacto__formulario form fieldset .botones .reset {
     font-size: 1.5rem;
   }
   footer .navbar__footer {
@@ -1184,8 +1190,8 @@ main .back5 {
     background-color: #e68d7d;
     cursor: pointer;
   }
-  .contacto__formulario form .botones .submit:hover,
-.contacto__formulario form .botones .reset:hover {
+  .contacto__formulario form fieldset .botones .submit:hover,
+.contacto__formulario form fieldset .botones .reset:hover {
     background-color: #e68d7d;
     cursor: pointer;
   }

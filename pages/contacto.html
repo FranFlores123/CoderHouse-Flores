@@ -13,7 +13,8 @@
     <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
     <title>Pizza House - Contacto</title>
     <meta name="description" content="Del horno de barro a la puerta de tu casa - Escribinos por cualquier consulta">
-    <meta name="keywords" content="pizza, horno de barro, delivery, cocinar, taller de cocina, italiana, pizza a la piedra, gourmet, pedido online, variedad de sabores, gustos">
+    <meta name="keywords"
+        content="pizza, horno de barro, delivery, cocinar, taller de cocina, italiana, pizza a la piedra, gourmet, pedido online, variedad de sabores, gustos">
 </head>
 
 <body>
@@ -31,8 +32,8 @@
             </ul>
         </nav>
     </header>
-    <section class="contacto">
-        <div class="contacto__mensaje">
+    <main class="contacto">
+        <section class="contacto__mensaje">
             <h2> pizza <span>house</span></h2>
             <p>Escribinos por cualquier consulta.</p>
             <p>Si aún no visitaste nuestros talleres de cocina, te invitamos a que vengas a tener la experciencia de
@@ -41,32 +42,34 @@
                 <a href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
                 <p>011 XXX-XXXXX</p>
             </div>
-        </div>
-        <div class="contacto__formulario">
-            <form action="enviar.php" method="post" enctype="text/plain">
+        </section>
+        <section class="contacto__formulario">
+            <form action="" method="get" id="formulario">
+                <fieldset>
 
-                <label for="names">Nombre</label>
-                <input id="names" name="names" type="text" required>
+                    <label for="names">Nombre</label>
+                    <input id="names" name="names" type="text" required>
 
-                <label for="apellido">Apellido</label>
-                <input id="apellido" name="apellido" type="text" required>
+                    <label for="apellido">Apellido</label>
+                    <input id="apellido" name="apellido" type="text" required>
 
-                <label for="edad">Edad</label>
-                <input id="edad" name="edad" type="number" required>
+                    <label for="edad">Edad</label>
+                    <input id="edad" name="edad" type="number" required>
 
-                <label for="mail">Correo</label>
-                <input id="mail" name="mail" type="email" required>
+                    <label for="mail">Correo</label>
+                    <input id="mail" name="mail" type="email" required>
 
-                <label for="date">Comentarios</label>
-                <input id="coment" name="apellido" type="text" placeholder="contanos como podemos ayudarte"
-                    required></textarea>
-                <div class="botones">
-                    <input class="submit" type="submit" value="enviar">
-                    <input class="reset" type="reset" value="reset">
-                </div>
+                    <label for="date">Comentarios</label>
+                    <input id="coment" name="apellido" type="text" placeholder="contanos como podemos ayudarte"
+                        required></textarea>
+                    <div class="botones">
+                        <input class="submit" type="submit" value="enviar">
+                        <input class="reset" type="reset" value="reset">
+                    </div>
+                </fieldset>
             </form>
-        </div>
-    </section>
+        </section>
+    </main>
     <footer class="footer__margin">
         <div class="footer__title">
             <h2>pizza <span>house</span></h2>

@@ -321,26 +321,29 @@
             height: 100vh;
 
             form {
-                display: flex;
-                flex-direction: column;
-                width: 70%;
-                font-size: 1.5rem;
+                fieldset {
+                    display: flex;
+                    flex-direction: column;
+                    width: 80vw;
+                    font-size: 1.5rem;
 
-                input {
-                    font-size: 1rem;
-                    color: #000000;
-                }
-
-                .botones {
-
-                    .submit,
-                    .reset {
-                        font-size: 1.5rem;
+                    input {
+                        font-size: 1rem;
+                        color: #000000;
                     }
 
+                    .botones {
+                        justify-content: center;
+
+                        .submit,
+                        .reset {
+                            font-size: 1.5rem;
+                        }
+
+                    }
                 }
             }
-        }
+        }    
     }
 
 
@@ -418,14 +421,17 @@
 
         form {
 
-            .botones {
+            fieldset {
 
-                .submit,
-                .reset {
+                .botones {
 
-                    &:hover {
-                        background-color: $bgColor2;
-                        cursor: pointer;
+                    .submit,
+                    .reset {
+
+                        &:hover {
+                            background-color: $bgColor2;
+                            cursor: pointer;
+                        }
                     }
                 }
             }
