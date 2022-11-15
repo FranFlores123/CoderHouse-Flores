@@ -293,7 +293,7 @@
 
         .contacto__mensaje {
             height: 100vh;
-            padding-block: 15vh;
+            padding-block: 20vh;
 
             h2 {
                 font-size: 10vw;
@@ -323,18 +323,23 @@
             form {
                 width: 80vw;
                 grid-template-columns: 1fr;
-                grid-template-rows: repeat(6, 1fr);
+                grid-template-rows: repeat(7, 1fr);
                 grid-template-areas:
                     "nombre"
                     "apellido"
                     "edad"
                     "email"
                     "mensaje"
-                    "mensaje";
+                    "enviar"
+                    "reset";
 
                 input {
                     color: #000000;
                     width: 100%;
+
+                    &::placeholder {
+                        font-size: 1.3rem;
+                    }
                 }
 
 
@@ -342,6 +347,7 @@
                 .reset {
                     font-size: 2.5vh;
                     width: 50%;
+                    height: 7vh;
                 }
             }
         }
@@ -423,22 +429,18 @@
 
         form {
 
-            fieldset {
+            .submit,
+            .reset {
 
-                .botones {
-
-                    .submit,
-                    .reset {
-
-                        &:hover {
-                            background-color: $bgColor2;
-                            cursor: pointer;
-                        }
-                    }
+                &:hover {
+                    background-color: $bgColor2;
+                    cursor: pointer;
                 }
             }
         }
     }
+        
+    
 
     .cucina__cards {
 
