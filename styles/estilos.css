@@ -1272,10 +1272,10 @@ main .back4 {
     flex: 2;
   }
   .section__box .box1 h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
   .section__box .box1 h2 {
-    font-size: 1.7rem;
+    font-size: 2rem;
   }
   .section__box .box4 {
     order: 1;
@@ -1292,7 +1292,7 @@ main .back4 {
 .section__box .box3 a,
 .section__box .box4 a,
 .section__box .box5 a {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
   .background__pizza {
     height: 30vh;
@@ -1310,7 +1310,7 @@ main .back4 {
   .section__card .card .pizzaimg,
 .section__card__veggie .card .pizzaimg {
     padding-bottom: 1rem;
-    max-height: 15rem;
+    max-height: 20rem;
   }
   .section__card .card .description h2,
 .section__card__veggie .card .description h2 {
@@ -1355,7 +1355,7 @@ main .back4 {
   }
   .back1 .frase__inicial {
     padding-inline: 1rem;
-    padding-top: 5rem;
+    padding-top: 10rem;
   }
   .back1 .frase__inicial h2 {
     line-height: 2rem;
@@ -1364,36 +1364,40 @@ main .back4 {
   }
   main .back2 {
     padding-top: 3rem;
+    padding-inline: 0;
   }
   main .back2 h2 {
     text-align: center;
     padding-top: 3rem;
+    padding-inline: 1rem;
   }
   main .back2 p {
     text-align: center;
     font-size: 1rem;
-    padding-bottom: 1rem;
+    padding-bottom: 3rem;
+    padding-inline: 1rem;
   }
   main .back2 .pres__lista ul {
     padding-left: 0rem;
-    line-height: 2.5rem;
+    line-height: 3rem;
     font-size: 1rem;
+    padding-left: 1rem;
   }
   main .back3 {
     padding-inline: 1rem;
   }
   main .back3 h2,
 main .back3 p {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
   main .back4 p {
-    font-size: 1rem;
+    font-size: 1.5rem;
     line-height: 2.5rem;
     text-align: center;
     padding-inline: 1rem;
   }
   main .back5 p {
-    font-size: 1rem;
+    font-size: 1.5rem;
     padding-inline: 1rem;
   }
   .contacto {

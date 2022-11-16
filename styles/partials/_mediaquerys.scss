@@ -561,11 +561,11 @@
             flex: 2;
 
             h1 {
-                font-size: 2rem;
+                font-size: 2.5rem;
             }
 
             h2 {
-                font-size: 1.7rem;
+                font-size: 2rem;
             }
         }
 
@@ -585,7 +585,7 @@
         .box3 a,
         .box4 a,
         .box5 a {
-            font-size: 2rem;
+            font-size: 2.5rem;
         }
     }
 
@@ -612,7 +612,7 @@
 
             .pizzaimg {
                 padding-bottom: 1rem;
-                max-height: 15rem;
+                max-height: 20rem;
             }
 
             .description {
@@ -676,7 +676,7 @@
 
         .frase__inicial {
             padding-inline: 1rem;
-            padding-top: 5rem;
+            padding-top: 10rem;
 
             h2 {
                 line-height: 2rem;
@@ -689,23 +689,28 @@
     main {
         .back2 {
             padding-top: 3rem;
+            padding-inline: 0;
 
             h2 {
                 text-align: center;
                 padding-top: 3rem;
+                padding-inline: 1rem;
             }
 
             p {
                 text-align: center;
                 font-size: 1rem;
-                padding-bottom: 1rem;
+                padding-bottom: 3rem;
+                padding-inline: 1rem;
             }
 
             .pres__lista {
+
                 ul {
                     padding-left: 0rem;
-                    line-height: 2.5rem;
+                    line-height: 3rem;
                     font-size: 1rem;
+                    padding-left: 1rem;
                 }
             }
         }
@@ -714,14 +719,14 @@
             padding-inline: 1rem;
             h2,
             p {
-                font-size: 1rem;
+                font-size: 1.5rem;
             }
         }
 
 
         .back4 {
             p {
-                font-size: 1rem;
+                font-size: 1.5rem;
                 line-height: 2.5rem;
                 text-align: center;
                 padding-inline: 1rem;
@@ -730,7 +735,7 @@
 
         .back5 {
             p {
-                font-size: 1rem;
+                font-size: 1.5rem;
                 padding-inline: 1rem;
             }
         }
