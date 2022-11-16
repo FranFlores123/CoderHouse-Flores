@@ -1,5 +1,161 @@
-/////////////////////    MEDIA QUERYS MAX 900  /////////////////////////
-@media screen and (max-width: 900px) {
+/////////////////////    MEDIA QUERYS MAX 1200  /////////////////////////
+@media screen and (max-width: 1250px) {
+    // MEDIA QUERYS MENU 1250 //
+
+    .background__pizza {
+
+        .background__title {
+
+            h2 {
+                font-size: 4.5rem;
+            }
+        }
+    }
+
+    .section__card {
+        gap: 4rem;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(9, 1fr);
+        grid-template-areas:
+            "card1  card2"
+            "card3  card4"
+            "card5  card6"
+            "card7 card8"
+            "card9 card10"
+            "card11 card12"
+            "card13 card14"
+            "card15 card16"
+            "card17 card18";
+
+
+        .card {
+            flex-direction: column;
+
+            .pizzaimg {
+                padding-bottom: 1rem;
+                max-height: 25rem;
+            }
+
+            .description {
+
+                h2 {
+                    font-size: 1.8rem;
+                    padding-bottom: 1rem;
+                }
+
+                p {
+                    font-size: 1.5rem;
+                }
+
+                a {
+                    padding: 1rem;
+                    font-size: 1.4rem;
+                }
+            }
+        }
+    }
+
+    .section__card__veggie {
+        gap: 4rem;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+            "cardV1  cardV2"
+            "cardV3  cardV4"
+            "cardV5  cardV6";
+
+        .card {
+            flex-direction: column;
+
+            .pizzaimg {
+                padding-bottom: 1rem;
+                max-height: 25rem;
+            }
+
+            .description {
+
+                h2 {
+                    font-size: 1.8rem;
+                    padding-bottom: 1rem;
+                }
+
+                p {
+                    font-size: 1.5rem;
+                }
+
+                a {
+                    padding: 1rem;
+                    font-size: 1.4rem;
+                }
+            }
+        }
+    }
+
+    // MEDIA QUERYS CUCINA 1250 //
+    .cucina__cards {
+        flex-direction: column;
+        gap: 5rem;
+
+        .cucina__card {
+            flex-direction: row;
+            width: 80%;
+            min-height: auto;
+            padding-bottom: 0;
+
+            img {
+                width: 60%;
+                padding-bottom: 0;
+            }
+
+            .infocard {
+                h3 {
+                    font-size: 1.6rem;
+                }
+            }
+        }
+    }
+
+    // MEDIA QUERYS NUESTRO METODO 1250 //
+
+    .back1 {
+
+        .frase__inicial {
+            padding-inline: 15rem;
+        }
+    }
+
+    main {
+
+        .back2 {
+            padding-top: 10rem;
+            text-align: center;
+            padding-inline: 2.5rem;
+
+            .pres__lista {
+                width: 100%;
+
+                ul {
+                    padding-left: 2rem;
+                    text-align: left;
+                }
+            }
+        }
+    }
+
+    // MEDIA QUERYS CONTACTO 1250 //
+    .contacto {
+
+        .contacto__mensaje {
+
+            p {
+                padding-inline: 3rem;
+            }
+        }
+    }
+}
+
+/////////////////////    MEDIA QUERYS MAX 995  /////////////////////////
+@media screen and (max-width: 995px) {
     /* MENU ICONO */
 
     .btn__label {
@@ -39,6 +195,121 @@
     #btn__menu:checked~.navbar {
         margin-left: 0;
     }
+
+    // MEDIA QUERYS HOME 995 //
+
+    .section__box {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+            "box1 box1"
+            "box2 box3"
+            "box4 box5";
+
+        .box1 {
+
+            h1 {
+                font-size: 3.5rem;
+            }
+
+            h2 {
+                font-size: 2.5rem;
+            }
+        }
+
+        .box2,
+        .box3,
+        .box4,
+        .box5 {
+            font-size: 4rem;
+        }
+    }
+
+    // MEDIA QUERYS CUCINA 995 //
+
+    .cucina__cards {
+        flex-direction: column;
+        gap: 5rem;
+
+        .cucina__card {
+            flex-direction: row;
+            width: 85%;
+            min-height: auto;
+            padding-bottom: 0;
+
+            img {
+                width: 50%;
+                padding-bottom: 0;
+            }
+
+            .infocard {
+                width: 50%;
+
+                h3 {
+                    font-size: 1.5rem;
+                }
+
+                p {
+                    font-size: 1.5rem;
+                    padding-bottom: 1rem;
+                }
+            }
+        }
+    }
+
+     // MEDIA QUERYS NUESTRO METODO 995 //
+
+
+    .back1 {
+
+        .frase__inicial {
+            padding-inline: 5rem;
+        }
+    }
+
+    main {
+
+        .back2 {
+            padding-top: 10rem;
+            padding-inline: 5rem;
+
+            ul {
+                text-align: left;
+            }
+        }
+
+        .back3,
+        .back4{
+            padding-top: 15rem;
+        }
+
+        .back5 {
+            padding-top: 10rem;
+            padding-inline: 0;
+
+            p {
+                padding-inline: 5rem;
+                text-align: center;
+            }
+        }
+    }
+
+    // MEDIA QUERYS CONTACTO 995 //
+
+    .contacto {
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5),  rgba(0, 0, 0, 0.5)), url(../images/background_contacto.jpg);
+        flex-direction: column;
+
+        .contacto__formulario {
+            padding-block: 2rem;
+        }
+
+        .contacto__mensaje {
+            padding-block: 10rem;
+        }
+
+    }
+
 }
 
 /////////////////////    MEDIA QUERYS MAX 768  /////////////////////////
@@ -58,17 +329,217 @@
         .box3,
         .box4,
         .box5 {
-            font-size: 6vw;
+            font-size: 2.5rem;
+        }
+    }
+
+    // MEDIA QUERYS MENU 768 //
+    .background__pizza {
+
+        .background__title {
+
+            h2 {
+                font-size: 3.5rem;
+            }
+        }
+    }
+
+    .section__card,
+    .section__card__veggie {
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+
+        .card {
+            flex-direction: column;
+
+            .pizzaimg {
+                padding-bottom: 1rem;
+                max-height: 25rem;
+            }
+
+            .description {
+
+                h2 {
+                    font-size: 1.8rem;
+                    padding-bottom: 1rem;
+                }
+
+                p {
+                    font-size: 1.5rem;
+                }
+
+                a {
+                    padding: 1rem;
+                    font-size: 1.4rem;
+                }
+            }
+        }
+    }
+
+    // MEDIA QUERYS CUCINA 768 //
+
+    .cucina__cards {
+        flex-direction: column;
+        gap: 5rem;
+
+        .cucina__card {
+            flex-direction: column;
+            width: 80%;
+            min-height: auto;
+            padding-bottom: 1.5rem;
+
+            img {
+                width: 100%;
+                padding-bottom: 1rem;
+            }
+
+            .infocard {
+                width: 80%;
+
+                h3 {
+                    font-size: 1.5rem;
+                }
+
+                p {
+                    font-size: 1.5rem;
+                    padding-bottom: 1rem;
+                }
+            }
+        }
+    }
+
+    // MEDIA QUERYS NUESTRO METODO 768 //
+
+    .back1 {
+
+        .frase__inicial {
+            padding-top: 8rem;
+
+            h2{
+                line-height: 3rem;
+                font-size: 1.5rem;
+            }
+        }
+    }
+    
+    main {
+
+        .back2 {
+            padding-top: 5rem;
+            padding-inline: 1.5rem;
+
+            h2 {
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: 1.5rem;
+                line-height: 2.5rem;
+            }
+
+            .pres__lista {
+                ul {
+                    font-size: 1.3rem;
+                }
+            }
+        }
+
+        .back3,
+        .back4{
+            padding-top: 10rem;
+        }
+
+        .back3 {
+            padding-inline: 5rem;
+            h2 {
+                padding-left: 0;
+                font-size: 1.5rem;
+            }
+
+            p {
+                padding-right: 0;
+                font-size: 1.5rem;
+            }
+        }
+
+        .back4 {
+            p{
+                text-align: center;
+                padding-inline: 5rem;
+                font-size: 1.5rem;
+            }
+        }
+
+        .back5 {
+            padding-top: 10rem;
+            padding-inline: 0;
+
+            p {
+                padding-inline: 5rem;
+                font-size: 1.5rem;
+                line-height: 2.5rem;
+            }
+        }
+    }
+
+    // MEDIA QUERYS CONTACTO 768 //
+
+    .contacto {
+
+        .contacto__formulario {
+
+            form {
+
+                input {
+                    padding: 2%;
+                    font-size: 1.5rem;
+
+                    &::placeholder {
+                        color: $bgColor;
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+
+        .contacto__mensaje {
+            h2 {
+                font-size: 2.5rem;
+            }
+
+            p {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    // MEDIA QUERYS FOOTER 768 //
+
+    footer {
+        .navbar__footer {
+            padding-bottom: 0rem;
+
+            .menu__footer {
+                flex-direction: column;
+                padding-block: 1rem;
+
+                .menu__item__f a {
+                    font-size: 1.4rem;
+                    padding: 0rem;
+                    padding-bottom: 2rem;
+                }
+            }
         }
     }
 }
 
 
-/////////////////////    MEDIA QUERYS MAX 480  /////////////////////////
+/////////////////////    MEDIA QUERYS MAX 320  /////////////////////////
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 320px) {
 
-    //////////// HOME 480 //////////// 
+    //////////// HOME 320 //////////// 
     .section__box {
         height: 100vh;
         display: flex;
@@ -90,11 +561,11 @@
             flex: 2;
 
             h1 {
-                font-size: 10vw;
+                font-size: 2rem;
             }
 
             h2 {
-                font-size: 7vw;
+                font-size: 1.7rem;
             }
         }
 
@@ -114,18 +585,18 @@
         .box3 a,
         .box4 a,
         .box5 a {
-            font-size: 5.5vh;
+            font-size: 2rem;
         }
     }
 
-    /// MEDIA QUERYS MENU 480 ///
+    /// MEDIA QUERYS MENU 320 ///
     .background__pizza {
         height: 30vh;
 
         .background__title {
 
             h2 {
-                font-size: 5.5vh;
+                font-size: 2.5rem;
             }
         }
     }
@@ -134,21 +605,17 @@
     .section__card__veggie {
         display: flex;
         flex-direction: column;
+        padding-inline: 1rem;
         gap: 4rem;
 
         .card {
-            flex-direction: column;
-            width: 85vw;
-            height: 70vh;
-            padding-bottom: 1rem;
 
             .pizzaimg {
-                max-width: 70vw;
-                padding-bottom: 2vh;
+                padding-bottom: 1rem;
+                max-height: 15rem;
             }
 
             .description {
-                max-width: 80%;
 
                 h2 {
                     font-size: 1.8rem;
@@ -161,7 +628,7 @@
 
                 a {
                     padding: 1rem;
-                    font-size: 1.4rem;
+                    font-size: 1.2rem;
                 }
             }
         }
@@ -182,127 +649,138 @@
         padding-block: 5vh;
     }
 
-    /// MEDIA QUERYS CUCINA 480 ///
+    /// MEDIA QUERYS CUCINA 320 ///
     .cucina__cards {
         padding-block: 4rem;
         height: auto;
 
         .cucina__card {
             width: 85%;
-            height: 65vh;
-            margin-bottom: 4vh;
+            margin-bottom: 2rem;
 
             .infocard {
 
-                h3 {
-                    font-size: 2rem;
-                }
-
                 p {
-                    padding-top: 1rem;
-                    padding-inline: 5vw;
-                    padding-bottom: 2vh;
-                }
-
-                a {
-                    bottom: 2vh;
+                    padding-top: 0.5rem;
+                    padding-inline: 1rem;
+                    padding-bottom: 1.5rem;
                 }
             }
         }
     }
 
-    /// MEDIA QUERYS NUESTRO METODO 480 ///
+    /// MEDIA QUERYS NUESTRO METODO 320 ///
 
     .back1 {
-        height: 90vh;
+        height: 100vh;
 
         .frase__inicial {
-            padding-inline: 5%;
-            padding-top: 25vh;
+            padding-inline: 1rem;
+            padding-top: 5rem;
 
             h2 {
-                font-size: 5vw;
                 line-height: 2rem;
                 font-weight: 400;
+                font-size: 1rem;
             }
         }
     }
 
     main {
         .back2 {
-            padding-top: 10vh;
+            padding-top: 3rem;
 
             h2 {
                 text-align: center;
-                padding-top: 10%;
+                padding-top: 3rem;
             }
 
             p {
                 text-align: center;
-                font-size: 5vw;
+                font-size: 1rem;
+                padding-bottom: 1rem;
             }
 
             .pres__lista {
-                width: 80vw;
-
                 ul {
                     padding-left: 0rem;
-                    line-height: 0.5rem;
-                    width: 40vw;
-                    font-size: 4vw;
+                    line-height: 2.5rem;
+                    font-size: 1rem;
                 }
             }
         }
 
-        .back3 h2,
-        .back3 p {
-            padding-inline: 10vw;
+        .back3 {
+            padding-inline: 1rem;
+            h2,
+            p {
+                font-size: 1rem;
+            }
         }
 
-        .back4,
+
+        .back4 {
+            p {
+                font-size: 1rem;
+                line-height: 2.5rem;
+                text-align: center;
+                padding-inline: 1rem;
+            }
+        }
+
         .back5 {
-            padding-top: 20vh;
-            padding-inline: 5vw;
-        }
-
-        .back4>p {
-            font-size: 5vw;
-            line-height: 2.5rem;
-            text-align: center;
-        }
-
-        .back5 p {
-            text-align: center;
-            font-size: 5vw;
-            padding-right: 0;
+            p {
+                font-size: 1rem;
+                padding-inline: 1rem;
+            }
         }
     }
 
-    /// MEDIA QUERYS CONTACTO 480 ///
+    /// MEDIA QUERYS CONTACTO 320 ///
 
     .contacto {
-        flex-direction: column;
-        height: 100%;
-        background-image: url(../images/background_contacto.jpg);
-        background-position: center;
+        padding-top: 1.5rem;
 
-        &::before {
-            height: 230%;
-            top: 4rem;
+        .contacto__formulario {
+
+            form {
+                padding-left: 1rem;
+                width: 100%;
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(7, 1fr);
+                grid-template-areas:
+                    "nombre"
+                    "apellido"
+                    "edad"
+                    "email"
+                    "mensaje"
+                    "enviar"
+                    "reset";
+
+                input {
+
+                    &::placeholder {
+                        color: #000000;
+                        font-size: 1rem;
+                    }
+                }
+            }
         }
 
         .contacto__mensaje {
-            height: 100vh;
-            padding-block: 20vh;
 
             h2 {
-                font-size: 10vw;
-                padding-bottom: 5vh;
+                font-size: 2rem;
+                padding-bottom: 2rem;
             }
 
             p {
-                font-size: 5vw;
-                padding-inline: 4rem;
+                font-size: 1.5rem;
+                padding-inline: 2rem;
+
+                span {
+                    font-size: 1.7rem;
+                }
             }
 
             .wapp {
@@ -317,61 +795,12 @@
                 }
             }
         }
-
-        .contacto__formulario {
-            padding-top: 7vh;
-
-            form {
-                width: 80vw;
-                grid-template-columns: 1fr;
-                grid-template-rows: repeat(7, 1fr);
-                grid-template-areas:
-                    "nombre"
-                    "apellido"
-                    "edad"
-                    "email"
-                    "mensaje"
-                    "enviar"
-                    "reset";
-
-                input {
-                    color: #000000;
-                    width: 100%;
-
-                    &::placeholder {
-                        font-size: 1.3rem;
-                    }
-                }
-            }
-        }
-    }
-
-
-
-    /// MEDIA QUERYS FOOTER 480 ///
-
-    footer {
-        .navbar__footer {
-            padding-bottom: 0rem;
-
-            .menu__footer {
-                flex-direction: column;
-                padding-block: 1rem;
-
-                .menu__item__f a {
-                    font-size: 1.4rem;
-                    padding: 0rem;
-                    padding-bottom: 2rem;
-                }
-            }
-        }
     }
 }
 
-
 /////////////////////    MEDIA QUERYS MIN 900  /////////////////////////
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 995px) {
 
     .box a:hover {
         color: $mainColor;

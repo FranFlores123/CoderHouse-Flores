@@ -4,7 +4,7 @@
     justify-content: center;
     gap: 4rem;
     width: 100%;
-    height: 85vh;
+    padding-block: 4rem;
     background-image: url(../images/background__white.jpg);
 
     .cucina__card {
@@ -12,9 +12,9 @@
         flex-direction: column;
         align-items: center;
         width: 25%;
-        height: 70vh;
+        padding-bottom: 2rem;
         background-color: $bgColor;
-        box-shadow: 3px 3px 15px #000000;
+        box-shadow: 3px 3px 10px #000000;
         border-radius: 15px;
         overflow: hidden;
         position: relative;
@@ -33,7 +33,7 @@
 
         img {
             width: 100%;
-            padding-bottom: 2rem;
+            padding-bottom: 2.5rem;
         }
 
         .infocard {
@@ -46,8 +46,8 @@
                 font-family: $fontRubik;
                 color: $mainColor;
                 text-transform: uppercase;
-                padding-bottom: 1rem;
-                font-size: 3vh;
+                padding-bottom: 1.5rem;
+                font-size: 2rem;
                 font-weight: 400;
                 text-align: center;
                 padding-inline: 1rem;
@@ -55,7 +55,7 @@
 
             p {
                 padding-bottom: 2rem;
-                font-size: 2.5vh;
+                font-size: 1.5rem;
                 color: #ffffff;
                 padding-inline: 2.5vw;
                 text-align: center;
@@ -65,7 +65,7 @@
             a {
                 font-family: $fontRubik;
                 color: #ffffff;
-                font-size: 2.2vh;
+                font-size: 1.2rem;
                 text-decoration: none;
                 background-color: $mainColor;
                 padding: 1rem;

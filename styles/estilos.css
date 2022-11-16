@@ -100,7 +100,6 @@ header .navbar .menu .active a {
   background-position: center;
   text-align: center;
   width: 100%;
-  height: 100%;
   -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   -webkit-animation-duration: 0.5s;
@@ -127,7 +126,7 @@ header .navbar .menu .active a {
 }
 .section__box .box1 h1 {
   color: #ffffff;
-  font-size: 70px;
+  font-size: 4.5rem;
   font-weight: 400;
   text-transform: uppercase;
   font-family: "Rubik Dirt", cursive;
@@ -147,7 +146,7 @@ header .navbar .menu .active a {
 }
 .section__box .box1 h2 {
   color: #fc8600;
-  font-size: 50px;
+  font-size: 3.3rem;
   font-family: "Satisfy", cursive;
   z-index: 1;
   text-shadow: 1px 1px 1px rgb(0, 0, 0);
@@ -164,7 +163,7 @@ header .navbar .menu .active a {
 .side__box {
   z-index: 1;
   font-family: "Satisfy", cursive;
-  font-size: 4vw;
+  font-size: 3.5rem;
   -webkit-animation: scale-up-ver-top 0.3s cubic-bezier(0.8, 0.8, 0.8, 1) both;
   animation: scale-up-ver-top 0.3s cubic-bezier(0.8, 0.8, 0.8, 1) both;
 }
@@ -211,7 +210,6 @@ header .navbar .menu .active a {
 }
 .background__pizza .background__title {
   width: 100%;
-  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -227,9 +225,9 @@ header .navbar .menu .active a {
 .background__pizza .background__title h2 {
   color: #ffffff;
   text-transform: uppercase;
-  font-size: 15vh;
+  font-size: 8rem;
   font-family: "Rubik Dirt", cursive;
-  font-weight: 600;
+  font-weight: 500;
   z-index: 1;
   position: absolute;
   text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5607843137);
@@ -239,12 +237,12 @@ header .navbar .menu .active a {
 }
 
 .section__card__veggie, .section__card {
-  height: 100%;
   width: 100%;
   display: grid;
   justify-items: center;
   align-items: center;
-  gap: 3vh;
+  gap: 2rem;
+  padding-inline: 2rem;
 }
 
 .section__card__veggie .card, .section__card .card {
@@ -252,11 +250,12 @@ header .navbar .menu .active a {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 45vh;
-  width: 30vw;
+  width: 100%;
+  min-height: 100%;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.459);
   border-radius: 20px;
   background-color: rgba(107, 57, 28, 0.6431372549);
+  padding-block: 3rem;
 }
 
 .section__card__veggie .card .description, .section__card .card .description {
@@ -264,34 +263,32 @@ header .navbar .menu .active a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: auto;
-  max-width: 13vw;
-  max-height: 42vh;
+  padding-inline: 1.5rem;
 }
 
 .section__card__veggie .card .description h2, .section__card .card .description h2 {
-  font-size: 2vw;
+  font-size: 2.2rem;
   font-family: "Rubik Dirt", cursive;
   color: #ffffff;
-  font-weight: 400;
-  padding-bottom: 8%;
+  font-weight: 300;
+  padding-bottom: 1.5rem;
 }
 
 .section__card__veggie .card .description p, .section__card .card .description p {
-  font-size: 2.5vh;
+  font-size: 1.5rem;
   font-family: "Marcellus SC", serif;
   color: #ffffff;
   font-weight: 300;
-  padding-inline: 8%;
-  padding-bottom: 2vh;
+  padding-bottom: 1.5rem;
 }
 
 .section__card__veggie .card .description a, .section__card .card .description a {
-  color: rgb(255, 255, 255);
+  color: #ffffff;
   text-decoration: none;
-  font-size: 1.2vw;
+  font-size: 1.5rem;
+  text-align: center;
   background-color: #fc8600;
-  padding: 5%;
+  padding: 1rem;
   font-weight: 300;
   border-radius: 15px;
   text-transform: uppercase;
@@ -304,7 +301,7 @@ header .navbar .menu .active a {
   grid-template-areas: "card1  card2  card3" "card4  card5  card6" "card7  card8  card9" "card10 card11 card12" "card13 card14 card15" "card16 card17 card18";
 }
 .section__card .card .pizzaimg {
-  max-width: 13vw;
+  max-height: 20rem;
 }
 .section__card__veggie {
   grid-template-columns: 1fr 1fr 1fr;
@@ -312,7 +309,7 @@ header .navbar .menu .active a {
   grid-template-areas: "cardV1  cardV2  cardV3" "cardV4  cardV5  cardV6";
 }
 .section__card__veggie .card .pizzaimg {
-  max-width: 13vw;
+  max-height: 20rem;
 }
 .section__card:nth-child(1) {
   grid-area: card 1;
@@ -435,7 +432,7 @@ header .navbar .menu .active a {
   justify-content: center;
   gap: 4rem;
   width: 100%;
-  height: 85vh;
+  padding-block: 4rem;
   background-image: url(../images/background__white.jpg);
 }
 .cucina__cards .cucina__card {
@@ -443,9 +440,9 @@ header .navbar .menu .active a {
   flex-direction: column;
   align-items: center;
   width: 25%;
-  height: 70vh;
+  padding-bottom: 2rem;
   background-color: #524949;
-  box-shadow: 3px 3px 15px #000000;
+  box-shadow: 3px 3px 10px #000000;
   border-radius: 15px;
   overflow: hidden;
   position: relative;
@@ -462,7 +459,7 @@ header .navbar .menu .active a {
 }
 .cucina__cards .cucina__card img {
   width: 100%;
-  padding-bottom: 2rem;
+  padding-bottom: 2.5rem;
 }
 .cucina__cards .cucina__card .infocard {
   display: flex;
@@ -474,15 +471,15 @@ header .navbar .menu .active a {
   font-family: "Rubik Dirt", cursive;
   color: #fc8600;
   text-transform: uppercase;
-  padding-bottom: 1rem;
-  font-size: 3vh;
+  padding-bottom: 1.5rem;
+  font-size: 2rem;
   font-weight: 400;
   text-align: center;
   padding-inline: 1rem;
 }
 .cucina__cards .cucina__card .infocard p {
   padding-bottom: 2rem;
-  font-size: 2.5vh;
+  font-size: 1.5rem;
   color: #ffffff;
   padding-inline: 2.5vw;
   text-align: center;
@@ -491,7 +488,7 @@ header .navbar .menu .active a {
 .cucina__cards .cucina__card .infocard a {
   font-family: "Rubik Dirt", cursive;
   color: #ffffff;
-  font-size: 2.2vh;
+  font-size: 1.2rem;
   text-decoration: none;
   background-color: #fc8600;
   padding: 1rem;
@@ -516,8 +513,8 @@ main .back5, main .back4, main .back3, main .back2, .back1 {
 
 main .back5 p, main .back4 > p, main .back3 p {
   text-align: right;
-  font-size: 2.5rem;
-  padding-right: 10vw;
+  font-size: 2rem;
+  padding-right: 13rem;
   color: #ffffff;
   text-shadow: 1px 1px 2px #000000;
   font-family: "Raleway", sans-serif;
@@ -534,8 +531,8 @@ main .back5 p, main .back4 > p, main .back3 p {
 }
 .back1 .frase__inicial {
   text-align: center;
-  padding-inline: 25vw;
-  padding-top: 15vh;
+  padding-inline: 25rem;
+  padding-top: 10rem;
   position: relative;
   -webkit-animation: appear;
   animation: appear;
@@ -551,7 +548,7 @@ main .back5 p, main .back4 > p, main .back3 p {
   font-family: "Raleway", sans-serif;
   font-weight: 200;
   letter-spacing: 3px;
-  font-size: 3rem;
+  font-size: 2rem;
   line-height: 5rem;
 }
 .back1 .frase__inicial h2 span {
@@ -564,8 +561,8 @@ main .back2 {
   display: flex;
   flex-direction: column;
   color: #ffffff;
-  padding-top: 25vh;
-  padding-inline: 15vw;
+  padding-top: 15rem;
+  padding-inline: 5rem;
   font-family: "Raleway", sans-serif;
   font-weight: 200;
   line-height: 3rem;
@@ -588,7 +585,7 @@ main .back2 p {
 main .back2 .pres__lista {
   z-index: 1;
   display: flex;
-  height: 20vh;
+  line-height: 5rem;
   align-items: center;
   text-shadow: 1px 1px 1px #000000;
 }
@@ -599,7 +596,7 @@ main .back2 .pres__lista ul {
   padding-left: 5rem;
   height: 100%;
   justify-content: space-between;
-  font-size: 1.5vw;
+  font-size: 1.5rem;
 }
 main .back2 .pres__lista ul li i {
   color: #fc8600;
@@ -608,15 +605,16 @@ main .back2 .pres__lista ul li i {
 main .back3 {
   background-image: url(../images/back3.jpg);
   display: flex;
-  padding-top: 30vh;
+  padding-top: 20rem;
   flex-direction: column;
 }
 main .back3 h2 {
   text-align: left;
   width: 100%;
-  padding-left: 10vw;
-  font-size: 3rem;
+  padding-left: 10rem;
+  font-size: 2rem;
   padding-bottom: 4rem;
+  font-family: "Raleway", sans-serif;
   color: #fc8600;
   z-index: 1;
   text-shadow: 1px 1px 3px #2c2929;
@@ -624,42 +622,36 @@ main .back3 h2 {
 main .back4 {
   background-image: url(../images/back4.jpg);
   display: flex;
-  padding-top: 30vh;
+  padding-top: 20rem;
   flex-direction: column;
 }
 main .back4 > p {
   text-align: left;
-  padding-inline: 10vw;
-  font-size: 2.2vw;
+  padding-inline: 10rem;
+  font-size: 2.2rem;
   padding-bottom: 2rem;
-  line-height: 5vh;
+  line-height: 5rem;
 }
 main .back5 {
   background-image: url(../images/back5.jpg);
-  padding-top: 30vh;
-  padding-left: 35vw;
+  padding-top: 15rem;
+  padding-left: 20rem;
 }
+main .back5 p {
+  line-height: 5rem;
+}
+
 .contacto {
   width: 100%;
-  height: 100vh;
   display: flex;
-  background-image: url(../images/background_contacto2.jpg);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/background_contacto2.jpg);
   background-size: cover;
   background-position: center;
-  padding-bottom: 5vh;
-}
-.contacto::before {
-  content: "";
-  position: absolute;
-  top: 5rem;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background-color: rgba(41, 35, 35, 0.662745098);
+  padding-block: 5rem;
 }
 .contacto .contacto__formulario {
   flex: 1;
-  padding-block: 5vh;
+  padding-block: 5rem;
   display: flex;
   justify-content: center;
   z-index: 1;
@@ -669,8 +661,9 @@ main .back5 {
 }
 .contacto .contacto__formulario form {
   display: grid;
-  height: 95%;
-  gap: 6vh;
+  width: 85%;
+  gap: 2.5rem;
+  padding-left: 3rem;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(6, 1fr);
   grid-template-areas: "nombre     nombre" "apellido   apellido" "edad       edad" "email      email" "mensaje    mensaje" "enviar     reset";
@@ -692,7 +685,7 @@ main .back5 {
 }
 .contacto .contacto__formulario form input {
   height: auto;
-  width: 35vw;
+  width: 90%;
   padding: 1%;
   font-size: 2rem;
   font-family: "Marcellus SC", serif;
@@ -713,26 +706,26 @@ main .back5 {
 .contacto .contacto__formulario form .submit,
 .contacto .contacto__formulario form .reset {
   background-color: #fc8600;
-  border-radius: 20px;
+  border-radius: 1rem;
   border: none;
-  width: 160px;
+  width: 10rem;
   color: #ffffff;
 }
 .contacto .contacto__mensaje {
   flex: 1;
   display: flex;
   flex-direction: column;
-  padding-block: 20vh;
+  padding-top: 5rem;
   align-items: center;
   color: #ffffff;
   z-index: 1;
   text-shadow: 1px 1px 1px #000000;
 }
 .contacto .contacto__mensaje h2 {
-  font-size: 4vw;
+  font-size: 4rem;
   text-transform: uppercase;
   font-family: "Rubik Dirt", cursive;
-  padding-bottom: 6vh;
+  padding-bottom: 3rem;
 }
 .contacto .contacto__mensaje h2 span {
   color: #fc8600;
@@ -741,29 +734,27 @@ main .back5 {
 .contacto .contacto__mensaje p {
   text-align: center;
   padding-inline: 10rem;
-  font-weight: 900;
-  font-size: 2.5vh;
+  font-size: 1.5rem;
   font-family: "Raleway", sans-serif;
   padding-bottom: 2rem;
 }
 .contacto .contacto__mensaje p span {
   font-family: "Satisfy", cursive;
-  font-size: 2.9vh;
   color: #fc8600;
   text-shadow: 1px 1px 1px #000000;
+  font-size: 2rem;
 }
 .contacto .contacto__mensaje .wapp {
   display: flex;
   align-items: center;
-  height: 7vh;
 }
 .contacto .contacto__mensaje .wapp a {
   color: #ffffff;
-  font-size: 2vw;
+  font-size: 2rem;
   margin-inline: 1rem;
 }
 .contacto .contacto__mensaje .wapp p {
-  font-size: 1.7vw;
+  font-size: 1.5rem;
   padding-inline: 0;
   padding-bottom: 0;
 }
@@ -917,7 +908,95 @@ footer .redes a {
     opacity: 1;
   }
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1250px) {
+  .background__pizza .background__title h2 {
+    font-size: 4.5rem;
+  }
+  .section__card {
+    gap: 4rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(9, 1fr);
+    grid-template-areas: "card1  card2" "card3  card4" "card5  card6" "card7 card8" "card9 card10" "card11 card12" "card13 card14" "card15 card16" "card17 card18";
+  }
+  .section__card .card {
+    flex-direction: column;
+  }
+  .section__card .card .pizzaimg {
+    padding-bottom: 1rem;
+    max-height: 25rem;
+  }
+  .section__card .card .description h2 {
+    font-size: 1.8rem;
+    padding-bottom: 1rem;
+  }
+  .section__card .card .description p {
+    font-size: 1.5rem;
+  }
+  .section__card .card .description a {
+    padding: 1rem;
+    font-size: 1.4rem;
+  }
+  .section__card__veggie {
+    gap: 4rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "cardV1  cardV2" "cardV3  cardV4" "cardV5  cardV6";
+  }
+  .section__card__veggie .card {
+    flex-direction: column;
+  }
+  .section__card__veggie .card .pizzaimg {
+    padding-bottom: 1rem;
+    max-height: 25rem;
+  }
+  .section__card__veggie .card .description h2 {
+    font-size: 1.8rem;
+    padding-bottom: 1rem;
+  }
+  .section__card__veggie .card .description p {
+    font-size: 1.5rem;
+  }
+  .section__card__veggie .card .description a {
+    padding: 1rem;
+    font-size: 1.4rem;
+  }
+  .cucina__cards {
+    flex-direction: column;
+    gap: 5rem;
+  }
+  .cucina__cards .cucina__card {
+    flex-direction: row;
+    width: 80%;
+    min-height: auto;
+    padding-bottom: 0;
+  }
+  .cucina__cards .cucina__card img {
+    width: 60%;
+    padding-bottom: 0;
+  }
+  .cucina__cards .cucina__card .infocard h3 {
+    font-size: 1.6rem;
+  }
+  .back1 .frase__inicial {
+    padding-inline: 15rem;
+  }
+  main .back2 {
+    padding-top: 10rem;
+    text-align: center;
+    padding-inline: 2.5rem;
+  }
+  main .back2 .pres__lista {
+    width: 100%;
+  }
+  main .back2 .pres__lista ul {
+    padding-left: 2rem;
+    text-align: left;
+  }
+  .contacto .contacto__mensaje p {
+    padding-inline: 3rem;
+  }
+}
+@media screen and (max-width: 995px) {
   /* MENU ICONO */
   .btn__label {
     display: block;
@@ -950,6 +1029,79 @@ footer .redes a {
   #btn__menu:checked ~ .navbar {
     margin-left: 0;
   }
+  .section__box {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "box1 box1" "box2 box3" "box4 box5";
+  }
+  .section__box .box1 h1 {
+    font-size: 3.5rem;
+  }
+  .section__box .box1 h2 {
+    font-size: 2.5rem;
+  }
+  .section__box .box2,
+.section__box .box3,
+.section__box .box4,
+.section__box .box5 {
+    font-size: 4rem;
+  }
+  .cucina__cards {
+    flex-direction: column;
+    gap: 5rem;
+  }
+  .cucina__cards .cucina__card {
+    flex-direction: row;
+    width: 85%;
+    min-height: auto;
+    padding-bottom: 0;
+  }
+  .cucina__cards .cucina__card img {
+    width: 50%;
+    padding-bottom: 0;
+  }
+  .cucina__cards .cucina__card .infocard {
+    width: 50%;
+  }
+  .cucina__cards .cucina__card .infocard h3 {
+    font-size: 1.5rem;
+  }
+  .cucina__cards .cucina__card .infocard p {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+  }
+  .back1 .frase__inicial {
+    padding-inline: 5rem;
+  }
+  main .back2 {
+    padding-top: 10rem;
+    padding-inline: 5rem;
+  }
+  main .back2 ul {
+    text-align: left;
+  }
+  main .back3,
+main .back4 {
+    padding-top: 15rem;
+  }
+  main .back5 {
+    padding-top: 10rem;
+    padding-inline: 0;
+  }
+  main .back5 p {
+    padding-inline: 5rem;
+    text-align: center;
+  }
+  .contacto {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/background_contacto.jpg);
+    flex-direction: column;
+  }
+  .contacto .contacto__formulario {
+    padding-block: 2rem;
+  }
+  .contacto .contacto__mensaje {
+    padding-block: 10rem;
+  }
 }
 @media screen and (max-width: 768px) {
   .section__box {
@@ -961,10 +1113,150 @@ footer .redes a {
 .section__box .box3,
 .section__box .box4,
 .section__box .box5 {
-    font-size: 6vw;
+    font-size: 2.5rem;
+  }
+  .background__pizza .background__title h2 {
+    font-size: 3.5rem;
+  }
+  .section__card,
+.section__card__veggie {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+  .section__card .card,
+.section__card__veggie .card {
+    flex-direction: column;
+  }
+  .section__card .card .pizzaimg,
+.section__card__veggie .card .pizzaimg {
+    padding-bottom: 1rem;
+    max-height: 25rem;
+  }
+  .section__card .card .description h2,
+.section__card__veggie .card .description h2 {
+    font-size: 1.8rem;
+    padding-bottom: 1rem;
+  }
+  .section__card .card .description p,
+.section__card__veggie .card .description p {
+    font-size: 1.5rem;
+  }
+  .section__card .card .description a,
+.section__card__veggie .card .description a {
+    padding: 1rem;
+    font-size: 1.4rem;
+  }
+  .cucina__cards {
+    flex-direction: column;
+    gap: 5rem;
+  }
+  .cucina__cards .cucina__card {
+    flex-direction: column;
+    width: 80%;
+    min-height: auto;
+    padding-bottom: 1.5rem;
+  }
+  .cucina__cards .cucina__card img {
+    width: 100%;
+    padding-bottom: 1rem;
+  }
+  .cucina__cards .cucina__card .infocard {
+    width: 80%;
+  }
+  .cucina__cards .cucina__card .infocard h3 {
+    font-size: 1.5rem;
+  }
+  .cucina__cards .cucina__card .infocard p {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+  }
+  .back1 .frase__inicial {
+    padding-top: 8rem;
+  }
+  .back1 .frase__inicial h2 {
+    line-height: 3rem;
+    font-size: 1.5rem;
+  }
+  main .back2 {
+    padding-top: 5rem;
+    padding-inline: 1.5rem;
+  }
+  main .back2 h2 {
+    font-size: 2rem;
+  }
+  main .back2 p {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+  main .back2 .pres__lista ul {
+    font-size: 1.3rem;
+  }
+  main .back3,
+main .back4 {
+    padding-top: 10rem;
+  }
+  main .back3 {
+    padding-inline: 5rem;
+  }
+  main .back3 h2 {
+    padding-left: 0;
+    font-size: 1.5rem;
+  }
+  main .back3 p {
+    padding-right: 0;
+    font-size: 1.5rem;
+  }
+  main .back4 p {
+    text-align: center;
+    padding-inline: 5rem;
+    font-size: 1.5rem;
+  }
+  main .back5 {
+    padding-top: 10rem;
+    padding-inline: 0;
+  }
+  main .back5 p {
+    padding-inline: 5rem;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+  .contacto .contacto__formulario form input {
+    padding: 2%;
+    font-size: 1.5rem;
+  }
+  .contacto .contacto__formulario form input::-moz-placeholder {
+    color: #524949;
+    font-size: 1rem;
+  }
+  .contacto .contacto__formulario form input:-ms-input-placeholder {
+    color: #524949;
+    font-size: 1rem;
+  }
+  .contacto .contacto__formulario form input::placeholder {
+    color: #524949;
+    font-size: 1rem;
+  }
+  .contacto .contacto__mensaje h2 {
+    font-size: 2.5rem;
+  }
+  .contacto .contacto__mensaje p {
+    font-size: 1.5rem;
+  }
+  footer .navbar__footer {
+    padding-bottom: 0rem;
+  }
+  footer .navbar__footer .menu__footer {
+    flex-direction: column;
+    padding-block: 1rem;
+  }
+  footer .navbar__footer .menu__footer .menu__item__f a {
+    font-size: 1.4rem;
+    padding: 0rem;
+    padding-bottom: 2rem;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 320px) {
   .section__box {
     height: 100vh;
     display: flex;
@@ -980,10 +1272,10 @@ footer .redes a {
     flex: 2;
   }
   .section__box .box1 h1 {
-    font-size: 10vw;
+    font-size: 2rem;
   }
   .section__box .box1 h2 {
-    font-size: 7vw;
+    font-size: 1.7rem;
   }
   .section__box .box4 {
     order: 1;
@@ -1000,35 +1292,25 @@ footer .redes a {
 .section__box .box3 a,
 .section__box .box4 a,
 .section__box .box5 a {
-    font-size: 5.5vh;
+    font-size: 2rem;
   }
   .background__pizza {
     height: 30vh;
   }
   .background__pizza .background__title h2 {
-    font-size: 5.5vh;
+    font-size: 2.5rem;
   }
   .section__card,
 .section__card__veggie {
     display: flex;
     flex-direction: column;
+    padding-inline: 1rem;
     gap: 4rem;
-  }
-  .section__card .card,
-.section__card__veggie .card {
-    flex-direction: column;
-    width: 85vw;
-    height: 70vh;
-    padding-bottom: 1rem;
   }
   .section__card .card .pizzaimg,
 .section__card__veggie .card .pizzaimg {
-    max-width: 70vw;
-    padding-bottom: 2vh;
-  }
-  .section__card .card .description,
-.section__card__veggie .card .description {
-    max-width: 80%;
+    padding-bottom: 1rem;
+    max-height: 15rem;
   }
   .section__card .card .description h2,
 .section__card__veggie .card .description h2 {
@@ -1042,7 +1324,7 @@ footer .redes a {
   .section__card .card .description a,
 .section__card__veggie .card .description a {
     padding: 1rem;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
   .veggie__title {
     text-align: center;
@@ -1061,92 +1343,91 @@ footer .redes a {
   }
   .cucina__cards .cucina__card {
     width: 85%;
-    height: 65vh;
-    margin-bottom: 4vh;
-  }
-  .cucina__cards .cucina__card .infocard h3 {
-    font-size: 2rem;
+    margin-bottom: 2rem;
   }
   .cucina__cards .cucina__card .infocard p {
-    padding-top: 1rem;
-    padding-inline: 5vw;
-    padding-bottom: 2vh;
-  }
-  .cucina__cards .cucina__card .infocard a {
-    bottom: 2vh;
+    padding-top: 0.5rem;
+    padding-inline: 1rem;
+    padding-bottom: 1.5rem;
   }
   .back1 {
-    height: 90vh;
+    height: 100vh;
   }
   .back1 .frase__inicial {
-    padding-inline: 5%;
-    padding-top: 25vh;
+    padding-inline: 1rem;
+    padding-top: 5rem;
   }
   .back1 .frase__inicial h2 {
-    font-size: 5vw;
     line-height: 2rem;
     font-weight: 400;
+    font-size: 1rem;
   }
   main .back2 {
-    padding-top: 10vh;
+    padding-top: 3rem;
   }
   main .back2 h2 {
     text-align: center;
-    padding-top: 10%;
+    padding-top: 3rem;
   }
   main .back2 p {
     text-align: center;
-    font-size: 5vw;
-  }
-  main .back2 .pres__lista {
-    width: 80vw;
+    font-size: 1rem;
+    padding-bottom: 1rem;
   }
   main .back2 .pres__lista ul {
     padding-left: 0rem;
-    line-height: 0.5rem;
-    width: 40vw;
-    font-size: 4vw;
+    line-height: 2.5rem;
+    font-size: 1rem;
+  }
+  main .back3 {
+    padding-inline: 1rem;
   }
   main .back3 h2,
 main .back3 p {
-    padding-inline: 10vw;
+    font-size: 1rem;
   }
-  main .back4,
-main .back5 {
-    padding-top: 20vh;
-    padding-inline: 5vw;
-  }
-  main .back4 > p {
-    font-size: 5vw;
+  main .back4 p {
+    font-size: 1rem;
     line-height: 2.5rem;
     text-align: center;
+    padding-inline: 1rem;
   }
   main .back5 p {
-    text-align: center;
-    font-size: 5vw;
-    padding-right: 0;
+    font-size: 1rem;
+    padding-inline: 1rem;
   }
   .contacto {
-    flex-direction: column;
-    height: 100%;
-    background-image: url(../images/background_contacto.jpg);
-    background-position: center;
+    padding-top: 1.5rem;
   }
-  .contacto::before {
-    height: 230%;
-    top: 4rem;
+  .contacto .contacto__formulario form {
+    padding-left: 1rem;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-areas: "nombre" "apellido" "edad" "email" "mensaje" "enviar" "reset";
   }
-  .contacto .contacto__mensaje {
-    height: 100vh;
-    padding-block: 20vh;
+  .contacto .contacto__formulario form input::-moz-placeholder {
+    color: #000000;
+    font-size: 1rem;
+  }
+  .contacto .contacto__formulario form input:-ms-input-placeholder {
+    color: #000000;
+    font-size: 1rem;
+  }
+  .contacto .contacto__formulario form input::placeholder {
+    color: #000000;
+    font-size: 1rem;
   }
   .contacto .contacto__mensaje h2 {
-    font-size: 10vw;
-    padding-bottom: 5vh;
+    font-size: 2rem;
+    padding-bottom: 2rem;
   }
   .contacto .contacto__mensaje p {
-    font-size: 5vw;
-    padding-inline: 4rem;
+    font-size: 1.5rem;
+    padding-inline: 2rem;
+  }
+  .contacto .contacto__mensaje p span {
+    font-size: 1.7rem;
   }
   .contacto .contacto__mensaje .wapp a {
     color: #ffffff;
@@ -1155,42 +1436,8 @@ main .back5 {
   .contacto .contacto__mensaje .wapp p {
     font-size: 7vw;
   }
-  .contacto .contacto__formulario {
-    padding-top: 7vh;
-  }
-  .contacto .contacto__formulario form {
-    width: 80vw;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(7, 1fr);
-    grid-template-areas: "nombre" "apellido" "edad" "email" "mensaje" "enviar" "reset";
-  }
-  .contacto .contacto__formulario form input {
-    color: #000000;
-    width: 100%;
-  }
-  .contacto .contacto__formulario form input::-moz-placeholder {
-    font-size: 1.3rem;
-  }
-  .contacto .contacto__formulario form input:-ms-input-placeholder {
-    font-size: 1.3rem;
-  }
-  .contacto .contacto__formulario form input::placeholder {
-    font-size: 1.3rem;
-  }
-  footer .navbar__footer {
-    padding-bottom: 0rem;
-  }
-  footer .navbar__footer .menu__footer {
-    flex-direction: column;
-    padding-block: 1rem;
-  }
-  footer .navbar__footer .menu__footer .menu__item__f a {
-    font-size: 1.4rem;
-    padding: 0rem;
-    padding-bottom: 2rem;
-  }
 }
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 995px) {
   .box a:hover {
     color: #fc8600;
     font-size: 8vh;

@@ -43,7 +43,6 @@
         background-position: center;
         text-align: center;
         width: 100%;
-        height: 100%;
         -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
         animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
         animation-duration: 0.5s;
@@ -68,7 +67,7 @@
 
         h1 {
             color: #ffffff;
-            font-size: 70px;
+            font-size: 4.5rem;
             font-weight: 400;
             text-transform: uppercase;
             font-family: $fontRubik;
@@ -87,7 +86,7 @@
 
         h2 {
             color: $mainColor;
-            font-size: 50px;
+            font-size: 3.3rem;
             font-family: $fontSatisfy;
             z-index: 1;
             text-shadow: 1px 1px 1px rgb(0, 0, 0);
@@ -103,7 +102,7 @@
 .side__box {
     z-index: 1;
     font-family: $fontSatisfy;
-    font-size: 4vw;
+    font-size: 3.5rem;
     -webkit-animation: scale-up-ver-top 0.3s cubic-bezier(0.8, 0.8, 0.8, 1.000) both;
     animation: scale-up-ver-top 0.3s cubic-bezier(0.8, 0.8, 0.8, 1.000) both;
 }
