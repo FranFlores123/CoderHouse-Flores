@@ -535,11 +535,11 @@
 }
 
 
-/////////////////////    MEDIA QUERYS MAX 320  /////////////////////////
+/////////////////////    MEDIA QUERYS MAX 480  /////////////////////////
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 480px) {
 
-    //////////// HOME 320 //////////// 
+    //////////// HOME 480 //////////// 
     .section__box {
         height: 100vh;
         display: flex;
@@ -589,7 +589,7 @@
         }
     }
 
-    /// MEDIA QUERYS MENU 320 ///
+    /// MEDIA QUERYS MENU 480 ///
     .background__pizza {
         height: 30vh;
 
@@ -649,7 +649,7 @@
         padding-block: 5vh;
     }
 
-    /// MEDIA QUERYS CUCINA 320 ///
+    /// MEDIA QUERYS CUCINA 480 ///
     .cucina__cards {
         padding-block: 4rem;
         height: auto;
@@ -669,7 +669,7 @@
         }
     }
 
-    /// MEDIA QUERYS NUESTRO METODO 320 ///
+    /// MEDIA QUERYS NUESTRO METODO 480 ///
 
     .back1 {
         height: 100vh;
@@ -736,7 +736,7 @@
         }
     }
 
-    /// MEDIA QUERYS CONTACTO 320 ///
+    /// MEDIA QUERYS CONTACTO 480 ///
 
     .contacto {
         padding-top: 1.5rem;

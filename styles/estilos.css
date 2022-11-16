@@ -1256,7 +1256,7 @@ main .back4 {
     padding-bottom: 2rem;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 480px) {
   .section__box {
     height: 100vh;
     display: flex;
