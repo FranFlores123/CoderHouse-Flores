@@ -847,6 +847,11 @@
 
         .cucina__card {
 
+            &:hover {
+                transition: all 0.5s;
+                box-shadow: #fc860070 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+            }
+
             .infocard {
 
                 a {

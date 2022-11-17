@@ -1455,6 +1455,10 @@ main .back3 p {
     background-color: #864f45;
     cursor: pointer;
   }
+  .cucina__cards .cucina__card:hover {
+    transition: all 0.5s;
+    box-shadow: rgba(252, 134, 0, 0.4392156863) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  }
   .cucina__cards .cucina__card .infocard a:hover {
     background-color: #864f45;
     cursor: pointer;
