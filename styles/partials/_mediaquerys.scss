@@ -1,6 +1,5 @@
-/////////////////////    MEDIA QUERYS MAX 1200  /////////////////////////
-@media screen and (max-width: 1250px) {
-    // MEDIA QUERYS MENU 1250 //
+@media screen and (max-width: 1450px) {
+    // MEDIA QUERYS MENU 1450 //
 
     .background__pizza {
 
@@ -90,7 +89,13 @@
             }
         }
     }
+}
 
+
+
+/////////////////////    MEDIA QUERYS MAX 1200  /////////////////////////
+@media screen and (max-width: 1250px) {
+    
     // MEDIA QUERYS CUCINA 1250 //
     .cucina__cards {
         flex-direction: column;
@@ -224,6 +229,50 @@
         }
     }
 
+    // MEDIA QUERYS MENU 995 //
+    .background__pizza {
+
+        .background__title {
+
+            h2 {
+                font-size: 3.5rem;
+            }
+        }
+    }
+
+    .section__card,
+    .section__card__veggie {
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+
+        .card {
+            flex-direction: column;
+
+            .pizzaimg {
+                padding-bottom: 1rem;
+                max-height: 25rem;
+            }
+
+            .description {
+
+                h2 {
+                    font-size: 1.8rem;
+                    padding-bottom: 1rem;
+                }
+
+                p {
+                    font-size: 1.5rem;
+                }
+
+                a {
+                    padding: 1rem;
+                    font-size: 1.4rem;
+                }
+            }
+        }
+    }
+
     // MEDIA QUERYS CUCINA 995 //
 
     .cucina__cards {
@@ -326,50 +375,6 @@
         .box4,
         .box5 {
             font-size: 2.5rem;
-        }
-    }
-
-    // MEDIA QUERYS MENU 768 //
-    .background__pizza {
-
-        .background__title {
-
-            h2 {
-                font-size: 3.5rem;
-            }
-        }
-    }
-
-    .section__card,
-    .section__card__veggie {
-        display: flex;
-        flex-direction: column;
-        gap: 4rem;
-
-        .card {
-            flex-direction: column;
-
-            .pizzaimg {
-                padding-bottom: 1rem;
-                max-height: 25rem;
-            }
-
-            .description {
-
-                h2 {
-                    font-size: 1.8rem;
-                    padding-bottom: 1rem;
-                }
-
-                p {
-                    font-size: 1.5rem;
-                }
-
-                a {
-                    padding: 1rem;
-                    font-size: 1.4rem;
-                }
-            }
         }
     }
 

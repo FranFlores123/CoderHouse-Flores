@@ -1,5 +1,6 @@
 .body__menu {
     background-image: url(../images/background__white.jpg);
+    overflow-x: hidden;
 }
 
 .background__pizza {
@@ -124,6 +125,7 @@
 
         .card {
             @extend %sectcard;
+            flex-wrap: wrap;
 
             .pizzaimg {
                 max-height: 20rem;

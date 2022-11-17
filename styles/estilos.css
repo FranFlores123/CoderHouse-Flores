@@ -186,6 +186,7 @@ header .navbar .menu .active a {
 
 .body__menu {
   background-image: url(../images/background__white.jpg);
+  overflow-x: hidden;
 }
 
 .background__pizza {
@@ -299,6 +300,9 @@ header .navbar .menu .active a {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: repeat(6, 1fr);
   grid-template-areas: "card1  card2  card3" "card4  card5  card6" "card7  card8  card9" "card10 card11 card12" "card13 card14 card15" "card16 card17 card18";
+}
+.section__card .card {
+  flex-wrap: wrap;
 }
 .section__card .card .pizzaimg {
   max-height: 20rem;
@@ -908,7 +912,7 @@ footer .redes a {
     opacity: 1;
   }
 }
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 1450px) {
   .background__pizza .background__title h2 {
     font-size: 4.5rem;
   }
@@ -960,6 +964,8 @@ footer .redes a {
     padding: 1rem;
     font-size: 1.4rem;
   }
+}
+@media screen and (max-width: 1250px) {
   .cucina__cards {
     flex-direction: column;
     gap: 5rem;
@@ -1045,6 +1051,38 @@ footer .redes a {
 .section__box .box5 {
     font-size: 4rem;
   }
+  .background__pizza .background__title h2 {
+    font-size: 3.5rem;
+  }
+  .section__card,
+.section__card__veggie {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+  .section__card .card,
+.section__card__veggie .card {
+    flex-direction: column;
+  }
+  .section__card .card .pizzaimg,
+.section__card__veggie .card .pizzaimg {
+    padding-bottom: 1rem;
+    max-height: 25rem;
+  }
+  .section__card .card .description h2,
+.section__card__veggie .card .description h2 {
+    font-size: 1.8rem;
+    padding-bottom: 1rem;
+  }
+  .section__card .card .description p,
+.section__card__veggie .card .description p {
+    font-size: 1.5rem;
+  }
+  .section__card .card .description a,
+.section__card__veggie .card .description a {
+    padding: 1rem;
+    font-size: 1.4rem;
+  }
   .cucina__cards {
     flex-direction: column;
     gap: 5rem;
@@ -1110,38 +1148,6 @@ main .back4 {
 .section__box .box4,
 .section__box .box5 {
     font-size: 2.5rem;
-  }
-  .background__pizza .background__title h2 {
-    font-size: 3.5rem;
-  }
-  .section__card,
-.section__card__veggie {
-    display: flex;
-    flex-direction: column;
-    gap: 4rem;
-  }
-  .section__card .card,
-.section__card__veggie .card {
-    flex-direction: column;
-  }
-  .section__card .card .pizzaimg,
-.section__card__veggie .card .pizzaimg {
-    padding-bottom: 1rem;
-    max-height: 25rem;
-  }
-  .section__card .card .description h2,
-.section__card__veggie .card .description h2 {
-    font-size: 1.8rem;
-    padding-bottom: 1rem;
-  }
-  .section__card .card .description p,
-.section__card__veggie .card .description p {
-    font-size: 1.5rem;
-  }
-  .section__card .card .description a,
-.section__card__veggie .card .description a {
-    padding: 1rem;
-    font-size: 1.4rem;
   }
   .cucina__cards {
     flex-direction: column;
