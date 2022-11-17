@@ -95,7 +95,7 @@
 
 /////////////////////    MEDIA QUERYS MAX 1250  /////////////////////////
 @media screen and (max-width: 1250px) {
-    
+
     // MEDIA QUERYS CUCINA 1250 //
     .cucina__cards {
         flex-direction: column;
@@ -109,16 +109,20 @@
             padding-bottom: 0;
             align-items: center;
 
-            img {
-                width: 100%;
-                padding-bottom: 0;
+            .imgcard {
+                img {
+                    width: 100%;
+                    padding-bottom: 0;
+                }
             }
 
             .infocard {
                 padding: 0;
+
                 h3 {
                     font-size: 1.6rem;
                 }
+
                 p {
                     padding-inline: 1rem;
                 }
@@ -165,8 +169,8 @@
     }
 }
 
-/////////////////////    MEDIA QUERYS MAX 995  /////////////////////////
-@media screen and (max-width: 995px) {
+/////////////////////    MEDIA QUERYS MAX 900  /////////////////////////
+@media screen and (max-width: 900px) {
     /* MENU ICONO */
 
     .btn__label {
@@ -292,9 +296,11 @@
             flex-direction: column;
             padding-bottom: 1.5rem;
 
-            img {
-                width: 100%;
-                padding-bottom: 1rem;
+            .imgcard {
+                img {
+                    width: 100%;
+                    padding-bottom: 1rem;
+                }
             }
 
             .infocard {
@@ -314,7 +320,7 @@
         }
     }
 
-     // MEDIA QUERYS NUESTRO METODO 995 //
+    // MEDIA QUERYS NUESTRO METODO 995 //
 
 
     .back1 {
@@ -336,7 +342,7 @@
         }
 
         .back3,
-        .back4{
+        .back4 {
             padding-top: 15rem;
         }
 
@@ -354,7 +360,7 @@
     // MEDIA QUERYS CONTACTO 995 //
 
     .contacto {
-        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5),  rgba(0, 0, 0, 0.5)), url(../images/background_contacto.jpg);
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/background_contacto.jpg);
         flex-direction: column;
 
         .contacto__formulario {
@@ -404,13 +410,13 @@
         .frase__inicial {
             padding-top: 8rem;
 
-            h2{
+            h2 {
                 line-height: 3rem;
                 font-size: 1.5rem;
             }
         }
     }
-    
+
     main {
 
         .back2 {
@@ -434,12 +440,13 @@
         }
 
         .back3,
-        .back4{
+        .back4 {
             padding-top: 10rem;
         }
 
         .back3 {
             padding-inline: 5rem;
+
             h2 {
                 padding-left: 0;
                 font-size: 1.5rem;
@@ -452,7 +459,7 @@
         }
 
         .back4 {
-            p{
+            p {
                 text-align: center;
                 padding-inline: 5rem;
                 font-size: 1.5rem;
@@ -473,7 +480,7 @@
 
     // MEDIA QUERYS CUCINA 768 //
 
-    
+
 
     // MEDIA QUERYS CONTACTO 768 //
 
@@ -655,7 +662,7 @@
             .infocard {
 
                 p {
-                    padding-inline: 0.5rem;
+                    padding-inline: 1rem;
                     padding-bottom: 1.5rem;
                     font-size: 1.2rem;
                 }
@@ -711,6 +718,7 @@
 
         .back3 {
             padding-inline: 1rem;
+
             h2,
             p {
                 font-size: 1.5rem;
@@ -743,18 +751,7 @@
         .contacto__formulario {
 
             form {
-                padding-left: 1rem;
-                width: 100%;
-                grid-template-columns: 1fr;
-                grid-template-rows: repeat(7, 1fr);
-                grid-template-areas:
-                    "nombre"
-                    "apellido"
-                    "edad"
-                    "email"
-                    "mensaje"
-                    "enviar"
-                    "reset";
+                justify-items: center;
 
                 input {
 

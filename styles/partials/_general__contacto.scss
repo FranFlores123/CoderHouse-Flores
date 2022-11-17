@@ -20,7 +20,7 @@
             display: grid; 
             width: 85%;
             gap: 2.5rem;
-            padding-left: 3rem;
+            padding-inline: 4rem;
             grid-template-columns: 1fr 1fr;
             grid-template-rows: repeat(6, 1fr);
             grid-template-areas:
@@ -53,7 +53,7 @@
 
             input {
                 height: auto;
-                width: 90%;
+                width: 100%;
                 padding: 1%;
                 font-size: 2rem;
                 font-family: $fontMarcellus;
@@ -91,6 +91,7 @@
             text-transform: uppercase;
             font-family: $fontRubik;
             padding-bottom: 3rem;
+            text-align: center;
 
             span {
                 color: $mainColor;
