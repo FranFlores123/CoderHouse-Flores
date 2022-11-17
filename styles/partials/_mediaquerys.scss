@@ -95,11 +95,10 @@
     .cucina__cards {
         flex-direction: column;
         gap: 5rem;
+        padding-inline: 5%;
 
         .cucina__card {
             flex-direction: row;
-            width: 80%;
-            min-height: auto;
             padding-bottom: 0;
 
             img {
@@ -233,17 +232,14 @@
 
         .cucina__card {
             flex-direction: row;
-            width: 85%;
-            min-height: auto;
             padding-bottom: 0;
 
             img {
-                width: 50%;
-                padding-bottom: 0;
+                flex: 1;
             }
 
             .infocard {
-                width: 50%;
+                flex: 1;
 
                 h3 {
                     font-size: 1.5rem;
@@ -382,11 +378,10 @@
     .cucina__cards {
         flex-direction: column;
         gap: 5rem;
+        padding-inline: 10%;
 
         .cucina__card {
             flex-direction: column;
-            width: 80%;
-            min-height: auto;
             padding-bottom: 1.5rem;
 
             img {
@@ -490,6 +485,7 @@
         .contacto__formulario {
 
             form {
+                padding-left: 0;
 
                 input {
                     padding: 2%;
