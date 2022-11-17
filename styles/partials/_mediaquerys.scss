@@ -394,6 +394,7 @@
 
                 h3 {
                     font-size: 1.5rem;
+                    padding-bottom: 1rem;
                 }
 
                 p {
@@ -649,6 +650,7 @@
     .cucina__cards {
         padding-block: 4rem;
         height: auto;
+        padding-inline: 2%;
 
         .cucina__card {
             width: 85%;
@@ -657,9 +659,9 @@
             .infocard {
 
                 p {
-                    padding-top: 0.5rem;
-                    padding-inline: 1rem;
+                    padding-inline: 0.5rem;
                     padding-bottom: 1.5rem;
+                    font-size: 1.2rem;
                 }
             }
         }
