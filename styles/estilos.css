@@ -968,7 +968,7 @@ footer .redes a {
     align-items: center;
   }
   .cucina__cards .cucina__card {
-    max-width: 80%;
+    min-width: 90%;
     display: flex;
     padding-bottom: 0;
     align-items: center;
