@@ -909,7 +909,7 @@ footer .redes a {
 }
 @media screen and (max-width: 1450px) {
   .background__pizza .background__title h2 {
-    font-size: 4.5rem;
+    font-size: 5.5rem;
   }
   .section__card {
     gap: 4rem;
@@ -974,11 +974,17 @@ footer .redes a {
     align-items: center;
   }
   .cucina__cards .cucina__card img {
-    width: 60%;
+    width: 100%;
     padding-bottom: 0;
+  }
+  .cucina__cards .cucina__card .infocard {
+    padding: 0;
   }
   .cucina__cards .cucina__card .infocard h3 {
     font-size: 1.6rem;
+  }
+  .cucina__cards .cucina__card .infocard p {
+    padding-inline: 1rem;
   }
   .back1 .frase__inicial {
     padding-inline: 15rem;
@@ -1057,6 +1063,7 @@ footer .redes a {
     display: flex;
     flex-direction: column;
     gap: 4rem;
+    padding-inline: 15%;
   }
   .section__card .card,
 .section__card__veggie .card {
@@ -1093,6 +1100,9 @@ footer .redes a {
   .cucina__cards .cucina__card img {
     width: 100%;
     padding-bottom: 1rem;
+  }
+  .cucina__cards .cucina__card .infocard {
+    padding: 0;
   }
   .cucina__cards .cucina__card .infocard h3 {
     font-size: 1.5rem;
@@ -1147,6 +1157,10 @@ main .back4 {
 .section__box .box4,
 .section__box .box5 {
     font-size: 2.5rem;
+  }
+  .section__card,
+.section__card__veggie {
+    padding-inline: 5%;
   }
   .back1 .frase__inicial {
     padding-top: 8rem;
@@ -1336,10 +1350,10 @@ main .back4 {
   }
   .back1 .frase__inicial {
     padding-inline: 1rem;
-    padding-top: 10rem;
+    padding-top: 50%;
   }
   .back1 .frase__inicial h2 {
-    line-height: 2rem;
+    line-height: 3rem;
     font-weight: 400;
     font-size: 1rem;
   }
