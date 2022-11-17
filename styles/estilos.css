@@ -432,24 +432,20 @@ header .navbar .menu .active a {
 
 .cucina__cards {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 4rem;
   width: 100%;
-  padding-block: 4rem;
-  padding-inline: 8rem;
+  padding-block: 6rem;
+  padding-inline: 5rem;
+  gap: 5rem;
   background-image: url(../images/background__white.jpg);
 }
 .cucina__cards .cucina__card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex: 1;
+  max-width: 30%;
   padding-bottom: 2rem;
   background-color: #524949;
   box-shadow: 3px 3px 10px #000000;
-  border-radius: 15px;
+  border-radius: 5px;
   overflow: hidden;
+  flex: 1;
   -webkit-animation: swing-in-top-fwd 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
   animation: swing-in-top-fwd 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
 }
@@ -463,31 +459,29 @@ header .navbar .menu .active a {
 }
 .cucina__cards .cucina__card img {
   max-width: 100%;
-  padding-bottom: 2.5rem;
+  padding-bottom: 1rem;
 }
 .cucina__cards .cucina__card .infocard {
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+  align-items: center;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
 }
 .cucina__cards .cucina__card .infocard h3 {
   font-family: "Rubik Dirt", cursive;
   color: #fc8600;
   text-transform: uppercase;
-  padding-bottom: 1.5rem;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
   font-weight: 400;
-  text-align: center;
-  padding-inline: 1rem;
 }
 .cucina__cards .cucina__card .infocard p {
-  padding-bottom: 2rem;
   font-size: 1.5rem;
   color: #ffffff;
-  padding-inline: 2.5vw;
-  text-align: center;
   font-family: "Marcellus SC", serif;
+  margin-bottom: 1rem;
 }
 .cucina__cards .cucina__card .infocard a {
   font-family: "Rubik Dirt", cursive;
@@ -496,6 +490,7 @@ header .navbar .menu .active a {
   text-decoration: none;
   background-color: #fc8600;
   padding: 1rem;
+  width: 10rem;
   border-radius: 10px;
   font-weight: 400;
 }
@@ -969,11 +964,14 @@ footer .redes a {
   .cucina__cards {
     flex-direction: column;
     gap: 5rem;
-    padding-inline: 5%;
+    padding-inline: 2%;
+    align-items: center;
   }
   .cucina__cards .cucina__card {
-    flex-direction: row;
+    max-width: 80%;
+    display: flex;
     padding-bottom: 0;
+    align-items: center;
   }
   .cucina__cards .cucina__card img {
     width: 60%;
@@ -1086,23 +1084,24 @@ footer .redes a {
   .cucina__cards {
     flex-direction: column;
     gap: 5rem;
+    padding-inline: 5%;
   }
   .cucina__cards .cucina__card {
-    flex-direction: row;
-    padding-bottom: 0;
+    flex-direction: column;
+    padding-bottom: 1.5rem;
   }
   .cucina__cards .cucina__card img {
-    flex: 1;
-  }
-  .cucina__cards .cucina__card .infocard {
-    flex: 1;
+    width: 100%;
+    padding-bottom: 1rem;
   }
   .cucina__cards .cucina__card .infocard h3 {
     font-size: 1.5rem;
+    padding-bottom: 1rem;
   }
   .cucina__cards .cucina__card .infocard p {
     font-size: 1.5rem;
     padding-bottom: 1rem;
+    padding-inline: 5%;
   }
   .back1 .frase__inicial {
     padding-inline: 5rem;
@@ -1148,30 +1147,6 @@ main .back4 {
 .section__box .box4,
 .section__box .box5 {
     font-size: 2.5rem;
-  }
-  .cucina__cards {
-    flex-direction: column;
-    gap: 5rem;
-    padding-inline: 10%;
-  }
-  .cucina__cards .cucina__card {
-    flex-direction: column;
-    padding-bottom: 1.5rem;
-  }
-  .cucina__cards .cucina__card img {
-    width: 100%;
-    padding-bottom: 1rem;
-  }
-  .cucina__cards .cucina__card .infocard {
-    width: 80%;
-  }
-  .cucina__cards .cucina__card .infocard h3 {
-    font-size: 1.5rem;
-    padding-bottom: 1rem;
-  }
-  .cucina__cards .cucina__card .infocard p {
-    font-size: 1.5rem;
-    padding-bottom: 1rem;
   }
   .back1 .frase__inicial {
     padding-top: 8rem;

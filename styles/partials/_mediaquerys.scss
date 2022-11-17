@@ -93,18 +93,21 @@
 
 
 
-/////////////////////    MEDIA QUERYS MAX 1200  /////////////////////////
+/////////////////////    MEDIA QUERYS MAX 1250  /////////////////////////
 @media screen and (max-width: 1250px) {
     
     // MEDIA QUERYS CUCINA 1250 //
     .cucina__cards {
         flex-direction: column;
         gap: 5rem;
-        padding-inline: 5%;
+        padding-inline: 2%;
+        align-items: center;
 
         .cucina__card {
-            flex-direction: row;
+            max-width: 80%;
+            display: flex;
             padding-bottom: 0;
+            align-items: center;
 
             img {
                 width: 60%;
@@ -278,25 +281,28 @@
     .cucina__cards {
         flex-direction: column;
         gap: 5rem;
+        padding-inline: 5%;
 
         .cucina__card {
-            flex-direction: row;
-            padding-bottom: 0;
+            flex-direction: column;
+            padding-bottom: 1.5rem;
 
             img {
-                flex: 1;
+                width: 100%;
+                padding-bottom: 1rem;
             }
 
             .infocard {
-                flex: 1;
 
                 h3 {
                     font-size: 1.5rem;
+                    padding-bottom: 1rem;
                 }
 
                 p {
                     font-size: 1.5rem;
                     padding-bottom: 1rem;
+                    padding-inline: 5%;
                 }
             }
         }
@@ -378,38 +384,6 @@
         }
     }
 
-    // MEDIA QUERYS CUCINA 768 //
-
-    .cucina__cards {
-        flex-direction: column;
-        gap: 5rem;
-        padding-inline: 10%;
-
-        .cucina__card {
-            flex-direction: column;
-            padding-bottom: 1.5rem;
-
-            img {
-                width: 100%;
-                padding-bottom: 1rem;
-            }
-
-            .infocard {
-                width: 80%;
-
-                h3 {
-                    font-size: 1.5rem;
-                    padding-bottom: 1rem;
-                }
-
-                p {
-                    font-size: 1.5rem;
-                    padding-bottom: 1rem;
-                }
-            }
-        }
-    }
-
     // MEDIA QUERYS NUESTRO METODO 768 //
 
     .back1 {
@@ -483,6 +457,10 @@
             }
         }
     }
+
+    // MEDIA QUERYS CUCINA 768 //
+
+    
 
     // MEDIA QUERYS CONTACTO 768 //
 
