@@ -237,65 +237,6 @@ header .navbar .menu .active a {
   color: #fc8600;
 }
 
-.section__card__veggie, .section__card {
-  width: 100%;
-  display: grid;
-  justify-items: center;
-  align-items: center;
-  gap: 4rem;
-  padding-inline: 2rem;
-}
-
-.section__card__veggie .card, .section__card .card {
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  min-height: 100%;
-  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.459);
-  border-radius: 20px;
-  background-color: rgba(107, 57, 28, 0.6431372549);
-  padding-block: 3rem;
-}
-
-.section__card__veggie .card .description, .section__card .card .description {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding-inline: 1.5rem;
-}
-
-.section__card__veggie .card .description h2, .section__card .card .description h2 {
-  font-size: 2.2rem;
-  font-family: "Rubik Dirt", cursive;
-  color: #ffffff;
-  font-weight: 300;
-  padding-bottom: 1.5rem;
-}
-
-.section__card__veggie .card .description p, .section__card .card .description p {
-  font-size: 1.5rem;
-  font-family: "Marcellus SC", serif;
-  color: #ffffff;
-  font-weight: 300;
-  padding-bottom: 1.5rem;
-}
-
-.section__card__veggie .card .description a, .section__card .card .description a {
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 1.5rem;
-  text-align: center;
-  background-color: #fc8600;
-  padding: 1rem;
-  font-weight: 300;
-  border-radius: 15px;
-  text-transform: uppercase;
-  font-family: "Rubik Dirt", cursive;
-}
-
 .section__card {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: repeat(6, 1fr);
@@ -307,10 +248,32 @@ header .navbar .menu .active a {
 .section__card .card .pizzaimg {
   max-height: 20rem;
 }
+.veggie__title {
+  width: 100%;
+  height: 15vh;
+  margin-block: 3rem;
+  background-color: #524949;
+  color: #ffffff;
+  text-transform: uppercase;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-family: "Rubik Dirt", cursive;
+}
+.veggie__title h2 {
+  font-size: 8vh;
+}
+.veggie__title h2 span {
+  color: #fc8600;
+}
+
 .section__card__veggie {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-template-areas: "cardV1  cardV2  cardV3" "cardV4  cardV5  cardV6";
+}
+.section__card__veggie .card {
+  flex-wrap: wrap;
 }
 .section__card__veggie .card .pizzaimg {
   max-height: 20rem;
@@ -411,23 +374,62 @@ header .navbar .menu .active a {
   grid-area: cardV 6;
 }
 
-.veggie__title {
+.section__card, .section__card__veggie {
   width: 100%;
-  height: 15vh;
-  margin-block: 3rem;
-  background-color: #524949;
-  color: #ffffff;
-  text-transform: uppercase;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  gap: 4rem;
+  padding-inline: 2rem;
+}
+
+.section__card .card, .section__card__veggie .card {
+  text-align: center;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  min-height: 100%;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.459);
+  border-radius: 20px;
+  background-color: rgba(107, 57, 28, 0.6431372549);
+  padding-block: 3rem;
+}
+
+.section__card .card .description, .section__card__veggie .card .description {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-inline: 1.5rem;
+}
+
+.section__card .card .description h2, .section__card__veggie .card .description h2 {
+  font-size: 2.2rem;
   font-family: "Rubik Dirt", cursive;
+  color: #ffffff;
+  font-weight: 300;
+  padding-bottom: 1.5rem;
 }
-.veggie__title h2 {
-  font-size: 8vh;
+
+.section__card .card .description p, .section__card__veggie .card .description p {
+  font-size: 1.5rem;
+  font-family: "Marcellus SC", serif;
+  color: #ffffff;
+  font-weight: 300;
+  padding-bottom: 1.5rem;
 }
-.veggie__title h2 span {
-  color: #fc8600;
+
+.section__card .card .description a, .section__card__veggie .card .description a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.5rem;
+  text-align: center;
+  background-color: #fc8600;
+  padding: 1rem;
+  font-weight: 300;
+  border-radius: 15px;
+  text-transform: uppercase;
+  font-family: "Rubik Dirt", cursive;
 }
 
 .cucina__cards {
@@ -534,7 +536,7 @@ main .back5 p, main .back4 > p, main .back3 p {
 }
 .back1 .frase__inicial {
   text-align: center;
-  padding-inline: 25rem;
+  padding-inline: 25%;
   padding-top: 10rem;
   position: relative;
   -webkit-animation: appear;
@@ -922,9 +924,6 @@ footer .redes a {
     grid-template-rows: repeat(9, 1fr);
     grid-template-areas: "card1  card2" "card3  card4" "card5  card6" "card7 card8" "card9 card10" "card11 card12" "card13 card14" "card15 card16" "card17 card18";
   }
-  .section__card .card {
-    flex-direction: column;
-  }
   .section__card .card .pizzaimg {
     padding-bottom: 1rem;
     max-height: 25rem;
@@ -992,7 +991,7 @@ footer .redes a {
     padding-inline: 1rem;
   }
   .back1 .frase__inicial {
-    padding-inline: 15rem;
+    padding-inline: 10%;
   }
   main .back2 {
     padding-top: 10rem;
@@ -1001,10 +1000,12 @@ footer .redes a {
   }
   main .back2 .pres__lista {
     width: 100%;
+    justify-content: center;
+    gap: 5%;
   }
   main .back2 .pres__lista ul {
-    padding-left: 2rem;
     text-align: left;
+    padding-left: 0;
   }
   .contacto .contacto__mensaje p {
     padding-inline: 3rem;
@@ -1185,6 +1186,9 @@ main .back4 {
     font-size: 1.5rem;
     line-height: 2.5rem;
   }
+  main .back2 .pres__lista {
+    gap: 2%;
+  }
   main .back2 .pres__lista ul {
     font-size: 1.3rem;
   }
@@ -1219,6 +1223,9 @@ main .back4 {
   }
   .contacto .contacto__formulario form {
     padding-left: 0;
+    justify-content: center;
+    padding-inline: 0;
+    width: 85%;
   }
   .contacto .contacto__formulario form input {
     padding: 2%;
@@ -1401,10 +1408,10 @@ main .back3 p {
     padding-inline: 1rem;
   }
   .contacto {
-    padding-top: 1.5rem;
+    padding-top: 4rem;
   }
-  .contacto .contacto__formulario form {
-    justify-items: center;
+  .contacto .contacto__formulario {
+    padding-block: 0;
   }
   .contacto .contacto__formulario form input::-moz-placeholder {
     color: #000000;

@@ -28,7 +28,6 @@
 
 
         .card {
-            flex-direction: column;
 
             .pizzaimg {
                 padding-bottom: 1rem;
@@ -92,7 +91,6 @@
 }
 
 
-
 /////////////////////    MEDIA QUERYS MAX 1250  /////////////////////////
 @media screen and (max-width: 1250px) {
 
@@ -135,7 +133,7 @@
     .back1 {
 
         .frase__inicial {
-            padding-inline: 15rem;
+            padding-inline: 10%;
         }
     }
 
@@ -148,10 +146,12 @@
 
             .pres__lista {
                 width: 100%;
+                justify-content: center;
+                gap: 5%;
 
                 ul {
-                    padding-left: 2rem;
                     text-align: left;
+                    padding-left: 0;
                 }
             }
         }
@@ -433,6 +433,8 @@
             }
 
             .pres__lista {
+                gap: 2%;
+
                 ul {
                     font-size: 1.3rem;
                 }
@@ -478,9 +480,6 @@
         }
     }
 
-    // MEDIA QUERYS CUCINA 768 //
-
-
 
     // MEDIA QUERYS CONTACTO 768 //
 
@@ -490,6 +489,9 @@
 
             form {
                 padding-left: 0;
+                justify-content: center;
+                padding-inline: 0;
+                width: 85%;
 
                 input {
                     padding: 2%;
@@ -746,12 +748,12 @@
     /// MEDIA QUERYS CONTACTO 480 ///
 
     .contacto {
-        padding-top: 1.5rem;
+        padding-top: 4rem;
 
         .contacto__formulario {
+            padding-block: 0;
 
             form {
-                justify-items: center;
 
                 input {
 
