@@ -1007,6 +1007,14 @@ footer .redes a {
     text-align: left;
     padding-left: 0;
   }
+  main .back5 {
+    padding-left: 0;
+    padding-inline: 5%;
+  }
+  main .back5 p {
+    text-align: center;
+    padding-right: 0;
+  }
   .contacto .contacto__mensaje p {
     padding-inline: 3rem;
   }
@@ -1444,7 +1452,7 @@ main .back3 p {
     font-size: 7vw;
   }
 }
-@media screen and (min-width: 995px) {
+@media screen and (min-width: 900px) {
   .box a:hover {
     color: #fc8600;
     font-size: 8vh;

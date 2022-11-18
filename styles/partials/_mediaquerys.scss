@@ -155,6 +155,16 @@
                 }
             }
         }
+
+        .back5 {
+            padding-left: 0;
+            padding-inline: 5%;
+
+            p {
+                text-align: center;
+                padding-right: 0;
+            }
+        }
     }
 
     // MEDIA QUERYS CONTACTO 1250 //
@@ -211,7 +221,7 @@
         margin-left: 0;
     }
 
-    // MEDIA QUERYS HOME 995 //
+    // MEDIA QUERYS HOME 900 //
 
     .section__box {
         grid-template-columns: 1fr 1fr;
@@ -240,7 +250,7 @@
         }
     }
 
-    // MEDIA QUERYS MENU 995 //
+    // MEDIA QUERYS MENU 900 //
     .background__pizza {
 
         .background__title {
@@ -285,7 +295,7 @@
         }
     }
 
-    // MEDIA QUERYS CUCINA 995 //
+    // MEDIA QUERYS CUCINA 900 //
 
     .cucina__cards {
         flex-direction: column;
@@ -320,8 +330,7 @@
         }
     }
 
-    // MEDIA QUERYS NUESTRO METODO 995 //
-
+    // MEDIA QUERYS NUESTRO METODO 900 //
 
     .back1 {
 
@@ -357,7 +366,7 @@
         }
     }
 
-    // MEDIA QUERYS CONTACTO 995 //
+    // MEDIA QUERYS CONTACTO 900 //
 
     .contacto {
         background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/background_contacto.jpg);
@@ -798,7 +807,7 @@
 
 /////////////////////    MEDIA QUERYS MIN 900  /////////////////////////
 
-@media screen and (min-width: 995px) {
+@media screen and (min-width: 900px) {
 
     .box a:hover {
         color: $mainColor;
